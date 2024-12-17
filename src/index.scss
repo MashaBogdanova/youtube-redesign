@@ -1,6 +1,7 @@
-@use './sass/abstracts/variables.module';
+@use './sass/abstracts/variables.module.scss' as variables;
 
 html {
+  font-family: 'Mulish', sans-serif;
   font-size: 10px;
 }
 
