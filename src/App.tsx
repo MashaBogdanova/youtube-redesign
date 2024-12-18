@@ -1,9 +1,7 @@
-import './App.scss';
+import Header from './components/Header/Header.tsx';
 
 function App() {
-  return (
-    <>YouTube Redesign app will be here</>
-  );
+  return <Header />;
 }
 
 export default App;

@@ -1,0 +1,28 @@
+@use '../../sass/abstracts/variables.module' as variables;
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+
+}
+
+.notifications{
+  display: flex;
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.8rem;
+    height: 1.8rem;
+
+    font-size: 1.2rem;
+    color: variables.$color-text-xs;
+    background-color: variables.$color-accent;
+    border-radius: 50px;
+  }
+}
