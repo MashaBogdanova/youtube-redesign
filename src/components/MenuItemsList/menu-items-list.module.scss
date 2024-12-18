@@ -1,0 +1,15 @@
+@use '../../sass/abstracts/variables.module' as variables;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+
+  color: variables.$color-text-l;
+}
