@@ -7,12 +7,10 @@
 }
 
 .icon {
-
+  display: flex;
 }
 
-.notifications{
-  display: flex;
-  &__count {
+.notifications-count {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,4 +23,3 @@
     background-color: variables.$color-accent;
     border-radius: 50px;
   }
-}
