@@ -9,6 +9,7 @@ const UserPicture = () => {
       label="Open user profile menu"
       width="40"
       height="40"
+      translateX="50"
     />
   );
 };

@@ -4,7 +4,7 @@ import BurgerIcon from '../BurgerIcon/BurgerIcon.tsx';
 import YouTubeLogo from '../UI/YouTubeLogo/YouTubeLogo.tsx';
 import SearchInput from '../SearchInput/SearchInput.tsx';
 import HeaderIcons from '../HeaderIcons/HeaderIcons.tsx';
-// import UserPicture from '../UserPicture/UserPicture.tsx';
+import UserPicture from '../UserPicture/UserPicture.tsx';
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
       <YouTubeLogo />
       <SearchInput />
       <HeaderIcons />
-      {/*<UserPicture />*/}
+      <UserPicture />
     </header>
   );
 };
