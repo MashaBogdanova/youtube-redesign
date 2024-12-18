@@ -12,7 +12,11 @@ html {
 }
 
 body {
+  padding-top: variables.$body-top-padding;
+  padding-left: variables.$body-left-padding;
+
   font-size: 1.6rem;
   color: variables.$color-text-xxl;
+
   background-color: variables.$color-background-s;
 }

@@ -4,7 +4,14 @@ import ButtonIcon from '../UI/ButtonIcon/ButtonIcon.tsx';
 
 const BurgerIcon = () => {
   return (
-    <ButtonIcon icon={burgerIcon} label="Open menu" width="20" height="17" />
+    <ButtonIcon
+      icon={burgerIcon}
+      label="Open menu"
+      width="20"
+      height="17"
+      translateX="1"
+      translateY="0.5"
+    />
   );
 };
 
