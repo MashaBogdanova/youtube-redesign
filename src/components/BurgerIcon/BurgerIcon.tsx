@@ -9,7 +9,7 @@ const BurgerIcon = () => {
       label="Open menu"
       width="20"
       height="17"
-      translateX="1"
+      translateX="2"
       translateY="0.5"
     />
   );
