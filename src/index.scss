@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  width: variables.$screen-width;
   padding-top: variables.$body-top-padding;
   padding-left: variables.$body-left-padding;
 
