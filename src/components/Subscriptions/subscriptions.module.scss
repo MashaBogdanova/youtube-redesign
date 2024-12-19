@@ -1,4 +1,7 @@
 .subscriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
 }
 
 .title {

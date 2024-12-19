@@ -10,13 +10,17 @@ import favourites from '../../assets/nav-icons/favourites.svg';
 import liked from '../../assets/nav-icons/liked.svg';
 import music from '../../assets/nav-icons/music.svg';
 import games from '../../assets/nav-icons/games.svg';
+import arrow from '../../assets/nav-icons/expand-menu-arrow.svg';
 import { NavListItems } from '../../types/NavListItems.ts';
+import NavList from '../UI/NavList/NavList.tsx';
 
 const MenuItemsList = () => {
-  const items: NavListItems[] = [
+  const baseItems: NavListItems[] = [
     { icon: home, itemName: 'Home' },
     { icon: trending, itemName: 'Trending' },
     { icon: subscriptions, itemName: 'Subscriptions' },
+  ];
+  const additionalItems: NavListItems[] = [
     { icon: library, itemName: 'Library' },
     { icon: history, itemName: 'History' },
     { icon: watch, itemName: 'Watch later' },
@@ -36,23 +40,17 @@ const MenuItemsList = () => {
       icon: games,
       itemName: 'Games',
     },
+    {
+      icon: arrow,
+      itemName: 'Show more',
+    },
   ];
 
   return (
-    <ul className={styles.list}>
-      {items.map((item) => {
-        return (
-          <li
-            className={styles.item}
-            aria-label={item.itemName}
-            key={item.itemName}
-          >
-            <img src={item.icon} alt="" />
-            <p>{item.itemName}</p>
-          </li>
-        );
-      })}
-    </ul>
+    <section className={styles.menu}>
+      <NavList items={baseItems} />
+      <NavList items={additionalItems} />
+    </section>
   );
 };
 

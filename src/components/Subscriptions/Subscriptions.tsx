@@ -7,6 +7,7 @@ import user3 from '../../assets/subscriptions-icons/user3.svg';
 import user4 from '../../assets/subscriptions-icons/user4.svg';
 import user5 from '../../assets/subscriptions-icons/user5.svg';
 import user6 from '../../assets/subscriptions-icons/user6.svg';
+import NavList from '../UI/NavList/NavList.tsx';
 
 const Subscriptions = () => {
   const subscriptions: NavListItems[] = [
@@ -20,16 +21,7 @@ const Subscriptions = () => {
   return (
     <div className={styles.subscriptions}>
       <h3 className={styles.title}>Subscriptions</h3>
-      <ul>
-        {subscriptions.map((item) => {
-          return (
-            <li key={item.itemName}>
-              <img src={item.icon} alt="" />
-              <p>{item.itemName}</p>
-            </li>
-          );
-        })}
-      </ul>
+      <NavList items={subscriptions} itemsGap="2.3rem" />
     </div>
   );
 };
