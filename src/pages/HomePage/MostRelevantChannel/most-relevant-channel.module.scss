@@ -1,3 +1,76 @@
-.channel {
+@use '../../../sass/abstracts/variables.module' as variables;
 
+.channel {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.channel-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.image-title-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.channel-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: variables.$color-text-xl;
+}
+
+.video-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.icon-container {
+  position: relative;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+.time {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 0.9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4.7rem;
+  height: 2.4rem;
+
+  font-size: 1.4rem;
+  color: variables.$color-text-xs;
+
+  background-color: variables.$color-text-xxl-transparent;
+  border-radius: 1.2rem;
+}
+
+.video-title {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: variables.$color-text-xl;
+}
+
+.additional-information {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.3rem;
+  color: variables.$color-text-s;
+  white-space: nowrap;
+}
+
+.views-date-container {
+  display: flex;
+  gap: 0.8rem;
 }

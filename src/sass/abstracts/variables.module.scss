@@ -9,6 +9,7 @@ $color-text-m: rgba(48, 56, 76, 0.4);
 $color-text-l: #898989;
 $color-text-xl: #19202c;
 $color-text-xxl: #000000;
+$color-text-xxl-transparent: rgba(0, 0, 0, 0.3);
 
 $color-accent: #ff0000;
 
@@ -18,4 +19,6 @@ $screen-width: 1920px;
 $body-top-padding: 2rem;
 $body-left-padding: 3rem;
 
+// Home page & Channel page layout
 $content-left-spacing: 22.5rem;
+$pagination-right-spacing: 16rem;

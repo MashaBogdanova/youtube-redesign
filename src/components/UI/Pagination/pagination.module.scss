@@ -1,0 +1,22 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+
+.pagination {
+  display: flex;
+  align-items: center;
+  align-self: end;
+  gap: 1rem;
+  margin-right: variables.$pagination-right-spacing;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.8rem;
+  height: 2.8rem;
+
+  background-color: variables.$color-text-xxl-transparent;
+
+  border-radius: 50%;
+}

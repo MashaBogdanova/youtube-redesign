@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './home-page.module.scss';
 import MostRelevantChannel from './MostRelevantChannel/MostRelevantChannel.tsx';
 

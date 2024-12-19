@@ -1,4 +1,4 @@
-import { NavListItems } from '../types/NavListItems.ts';
+import { NavListItems } from '../types/nav-list-Items.ts';
 import home from '../assets/nav-icons/home.svg';
 import trending from '../assets/nav-icons/trending.svg';
 import subscriptions from '../assets/nav-icons/subscriptions.svg';

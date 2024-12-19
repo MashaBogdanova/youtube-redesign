@@ -3,7 +3,7 @@ import React from 'react';
 import options from '../../assets/header-icons/header-options-icon.svg';
 import notifications from '../../assets/header-icons/notifications-icon.svg';
 import videoCall from '../../assets/header-icons/video-call-icon.svg';
-import { ButtonIconFields } from '../../types/ButtonIconFields.ts';
+import { ButtonIconFields } from '../../types/button-Icon-fields.ts';
 import ButtonIcon from '../UI/ButtonIcon/ButtonIcon.tsx';
 import styles from './header-icons.module.scss';
 
