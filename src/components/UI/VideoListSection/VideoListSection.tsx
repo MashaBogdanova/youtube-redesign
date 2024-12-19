@@ -14,13 +14,13 @@ const VideoListSection = ({ sectionData }: Props) => {
       <div className={styles['top-block-container']}>
         <div className={styles['image-title-container']}>
           {sectionData.channelIcon && (
-            <img src={sectionData.channelIcon} alt={sectionData.channelName} />
+            <img src={sectionData.channelIcon} alt={sectionData.sectionName} />
           )}
           <h2
             className={styles['channel-title']}
             aria-describedby={sectionData.description && 'description'}
           >
-            {sectionData.channelName}
+            {sectionData.sectionName}
           </h2>
           {sectionData.description && (
             <p className={styles['title-description']}>

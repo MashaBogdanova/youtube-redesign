@@ -1,5 +1,5 @@
 export interface VideosListSection {
-  channelName: string;
+  sectionName: string;
   description?: string;
   channelIcon?: string;
   videos: VideoData[];

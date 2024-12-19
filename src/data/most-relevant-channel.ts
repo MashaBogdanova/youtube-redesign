@@ -7,7 +7,7 @@ import video6 from '../assets/home-page/most-relevant-channel/video6.png';
 import channelIcon from '../assets/home-page/most-relevant-channel/channel-icon.svg';
 import { VideosListSection } from '../types/videos-list-section.ts';
 export const mostRelevantChannel: VideosListSection = {
-  channelName: 'Dollie Blair',
+  sectionName: 'Dollie Blair',
   channelIcon: channelIcon,
   videos: [
     {
