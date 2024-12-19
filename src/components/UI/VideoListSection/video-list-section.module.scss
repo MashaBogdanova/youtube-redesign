@@ -1,16 +1,16 @@
 @use '../../../sass/abstracts/variables.module' as variables;
 
-.channel {
+
+.section {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.channel-title-container {
+.top-block-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .image-title-container {
@@ -23,6 +23,10 @@
   font-size: 2.6rem;
   font-weight: bold;
   color: variables.$color-text-xl;
+}
+
+.title-description {
+
 }
 
 .video-list {
@@ -74,3 +78,4 @@
   display: flex;
   gap: 0.8rem;
 }
+

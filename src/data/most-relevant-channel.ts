@@ -5,8 +5,8 @@ import video4 from '../assets/home-page/video4.png';
 import video5 from '../assets/home-page/video5.png';
 import video6 from '../assets/home-page/video6.png';
 import channelIcon from '../assets/home-page/channel-icon.svg';
-import { MostRelevantChannel } from '../types/most-relevant-channel.ts';
-export const mostRelevantChannel: MostRelevantChannel = {
+import { VideosListSection } from '../types/videos-list-section.ts';
+export const mostRelevantChannel: VideosListSection = {
   channelName: 'Dollie Blair',
   channelIcon: channelIcon,
   videos: [

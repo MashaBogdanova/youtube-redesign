@@ -1,5 +1,6 @@
-export interface MostRelevantChannel {
+export interface VideosListSection {
   channelName: string;
+  description?: string;
   channelIcon: string;
   videos: VideoData[];
 }
