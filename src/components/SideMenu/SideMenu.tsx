@@ -7,7 +7,7 @@ import styles from './side-menu.module.scss';
 
 const SideMenu = () => {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles['side-menu']}>
       <MenuItemsList />
       <Subscriptions />
       <Settings />

@@ -1,4 +1,6 @@
-.nav {
+.side-menu {
+  grid-area: side-menu;
+
   display: flex;
   flex-direction: column;
   gap: 6rem;
