@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './subscriptions.module.scss';
-import NavList from '../UI/NavList/NavList.tsx';
+
 import { subscriptions } from '../../data/subscriptions.ts';
+import NavList from '../UI/NavList/NavList.tsx';
+import styles from './subscriptions.module.scss';
 
 const Subscriptions = () => {
   return (

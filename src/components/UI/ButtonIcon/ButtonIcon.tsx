@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './button-icon.module.scss';
+
 import { ButtonIconFields } from '../../../types/ButtonIconFields.ts';
+import styles from './button-icon.module.scss';
 
 const ButtonIcon = ({
   icon,

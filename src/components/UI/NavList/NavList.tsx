@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './nav-list.module.scss';
 
 const NavList = ({ items, itemsGap = '2.9rem' }) => {

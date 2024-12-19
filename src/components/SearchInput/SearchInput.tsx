@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './search-input.module.scss';
 
 const SearchInput = () => {

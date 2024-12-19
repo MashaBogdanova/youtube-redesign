@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './youtube-logo.module.scss';
-import logo from '../../../assets/header-icons/youtube-icon.svg';
 import { Link } from 'react-router';
+
+import logo from '../../../assets/header-icons/youtube-icon.svg';
+import styles from './youtube-logo.module.scss';
 
 const YouTubeLogo = () => {
   return (

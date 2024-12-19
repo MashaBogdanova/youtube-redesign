@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './side-menu.module.scss';
+
 import MenuItemsList from '../MenuItemsList/MenuItemsList.tsx';
-import Subscriptions from '../Subscriptions/Subscriptions.tsx';
 import Settings from '../Settings/Settings.tsx';
+import Subscriptions from '../Subscriptions/Subscriptions.tsx';
+import styles from './side-menu.module.scss';
 
 const SideMenu = () => {
   return (

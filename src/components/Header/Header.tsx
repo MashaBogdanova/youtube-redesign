@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './header.module.scss';
+
 import BurgerIcon from '../BurgerIcon/BurgerIcon.tsx';
-import YouTubeLogo from '../UI/YouTubeLogo/YouTubeLogo.tsx';
-import SearchInput from '../SearchInput/SearchInput.tsx';
 import HeaderIcons from '../HeaderIcons/HeaderIcons.tsx';
+import SearchInput from '../SearchInput/SearchInput.tsx';
+import YouTubeLogo from '../UI/YouTubeLogo/YouTubeLogo.tsx';
 import UserPicture from '../UserPicture/UserPicture.tsx';
+import styles from './header.module.scss';
 
 const Header = () => {
   return (

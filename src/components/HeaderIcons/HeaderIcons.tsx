@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './header-icons.module.scss';
-import videoCall from '../../assets/header-icons/video-call-icon.svg';
+
 import options from '../../assets/header-icons/header-options-icon.svg';
 import notifications from '../../assets/header-icons/notifications-icon.svg';
-import ButtonIcon from '../UI/ButtonIcon/ButtonIcon.tsx';
+import videoCall from '../../assets/header-icons/video-call-icon.svg';
 import { ButtonIconFields } from '../../types/ButtonIconFields.ts';
+import ButtonIcon from '../UI/ButtonIcon/ButtonIcon.tsx';
+import styles from './header-icons.module.scss';
 
 const HeaderIcons = () => {
   const icons: ButtonIconFields[] = [

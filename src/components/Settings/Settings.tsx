@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './settings.module.scss';
+
 import settings from '../../assets/nav-icons/settings.svg';
+import styles from './settings.module.scss';
 
 const Settings = () => {
   return (

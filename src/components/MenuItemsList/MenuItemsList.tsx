@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './menu-items-list.module.scss';
-import NavList from '../UI/NavList/NavList.tsx';
+
 import { additionalItems, baseItems } from '../../config/nav-items.ts';
+import NavList from '../UI/NavList/NavList.tsx';
+import styles from './menu-items-list.module.scss';
 
 const MenuItemsList = () => {
   return (

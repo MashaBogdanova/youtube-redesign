@@ -1,6 +1,6 @@
+import styles from './app.module.scss';
 import Header from './components/Header/Header.tsx';
 import SideMenu from './components/SideMenu/SideMenu.tsx';
-import styles from './app.module.scss';
 
 function App() {
   return (
