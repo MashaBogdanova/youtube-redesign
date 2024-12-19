@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './video-list-section.module.scss';
-import Pagination from '../Pagination/Pagination.tsx';
 import { Link } from 'react-router';
+
 import { VideosListSection } from '../../../types/videos-list-section.ts';
+import Pagination from '../Pagination/Pagination.tsx';
+import styles from './video-list-section.module.scss';
 
 interface Props {
   sectionData: VideosListSection;
@@ -12,7 +13,7 @@ const VideoListSection = ({ sectionData }: Props) => {
     <section className={styles.section}>
       <div className={styles['top-block-container']}>
         <div className={styles['image-title-container']}>
-          {sectionData && (
+          {sectionData.channelIcon && (
             <img src={sectionData.channelIcon} alt={sectionData.channelName} />
           )}
           <h2

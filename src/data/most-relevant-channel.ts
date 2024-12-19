@@ -1,10 +1,10 @@
-import video1 from '../assets/home-page/video1.png';
-import video2 from '../assets/home-page/video2.png';
-import video3 from '../assets/home-page/video3.png';
-import video4 from '../assets/home-page/video4.png';
-import video5 from '../assets/home-page/video5.png';
-import video6 from '../assets/home-page/video6.png';
-import channelIcon from '../assets/home-page/channel-icon.svg';
+import video1 from '../assets/home-page/most-relevant-channel/video1.png';
+import video2 from '../assets/home-page/most-relevant-channel/video2.png';
+import video3 from '../assets/home-page/most-relevant-channel/video3.png';
+import video4 from '../assets/home-page/most-relevant-channel/video4.png';
+import video5 from '../assets/home-page/most-relevant-channel/video5.png';
+import video6 from '../assets/home-page/most-relevant-channel/video6.png';
+import channelIcon from '../assets/home-page/most-relevant-channel/channel-icon.svg';
 import { VideosListSection } from '../types/videos-list-section.ts';
 export const mostRelevantChannel: VideosListSection = {
   channelName: 'Dollie Blair',
