@@ -29,7 +29,15 @@ const VideoListSection = ({ sectionData }: Props) => {
             </p>
           )}
         </div>
-        <Pagination />
+
+        <div className={styles['subscribe-paginate-container']}>
+          {sectionData.subscribeButton && (
+            <button className={styles['subscribe-button']}>
+              Subscribe 2.3m
+            </button>
+          )}
+          <Pagination />
+        </div>
       </div>
 
       <ul className={styles['video-list']}>

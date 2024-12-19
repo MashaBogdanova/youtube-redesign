@@ -9,6 +9,7 @@ import { VideosListSection } from '../types/videos-list-section.ts';
 export const mostRelevantChannel: VideosListSection = {
   sectionName: 'Dollie Blair',
   channelIcon: channelIcon,
+  subscribeButton: false,
   videos: [
     {
       title: 'A Brief History Of Creation',

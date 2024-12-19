@@ -3,6 +3,7 @@ export interface VideosListSection {
   description?: string;
   channelIcon?: string;
   videos: VideoData[];
+  subscribeButton: boolean;
 }
 
 interface VideoData {

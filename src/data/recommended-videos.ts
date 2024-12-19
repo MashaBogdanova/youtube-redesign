@@ -5,6 +5,7 @@ import video3 from '../assets/home-page/recommended-videos/video3.png';
 
 export const recommendedVideos: VideosListSection = {
   sectionName: 'Recommended',
+  subscribeButton: false,
   videos: [
     {
       title: 'Dude You Re Getting A Telescope',

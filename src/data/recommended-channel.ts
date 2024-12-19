@@ -11,6 +11,7 @@ export const recommendedChannel: VideosListSection = {
   sectionName: 'Food & Drink',
   description: 'Recommended channel for you',
   channelIcon: channelIcon,
+  subscribeButton: true,
   videos: [
     {
       title: 'Astronomy Or Astrology',
