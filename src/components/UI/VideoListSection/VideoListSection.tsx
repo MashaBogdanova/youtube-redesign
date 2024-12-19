@@ -8,6 +8,7 @@ import styles from './video-list-section.module.scss';
 interface Props {
   sectionData: VideosListSection;
 }
+
 const VideoListSection = ({ sectionData }: Props) => {
   return (
     <section className={styles.section}>
@@ -34,7 +35,7 @@ const VideoListSection = ({ sectionData }: Props) => {
       <ul className={styles['video-list']}>
         {sectionData.videos.map((video) => {
           return (
-            <li aria-label={video.title}>
+            <li aria-label={video.title} key={`${video.author}${video.title}`}>
               <Link to="#" className={styles['icon-container']}>
                 <img src={video.icon} alt="" />
                 <span className={styles.time}>{video.time}</span>
