@@ -1,0 +1,35 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+  // todo: check why not 7?
+  padding-right: 10rem;
+}
+
+.icon-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.title {
+  @include mixins.title;
+}
+
+.subscribe-block-container {
+  display: flex;
+  align-self: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.subscribed {
+  @include mixins.statistics-text;
+}
+
+
