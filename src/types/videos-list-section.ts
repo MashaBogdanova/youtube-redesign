@@ -6,7 +6,7 @@ export interface VideosListSection {
   subscribeButton: boolean;
 }
 
-interface VideoData {
+export interface VideoData {
   title: string;
   author: string;
   time: string;
