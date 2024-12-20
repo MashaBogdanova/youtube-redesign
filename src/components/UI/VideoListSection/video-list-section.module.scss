@@ -38,17 +38,6 @@
   transform: translateY(1rem);
 }
 
-.subscribe-button {
-  width: 15.4rem;
-  height: 4rem;
-
-  font-size: 1.6rem;
-  color: variables.$color-text-xs;
-
-  background-color: variables.$color-accent;
-  border-radius: 2rem;
-}
-
 .video-list {
   display: flex;
   gap: 4rem;

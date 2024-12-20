@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import { VideosListSection } from '../../../types/videos-list-section.ts';
 import Pagination from '../Pagination/Pagination.tsx';
 import styles from './video-list-section.module.scss';
+import SubscribeButton from '../SubscribeButton/SubscribeButton.tsx';
 
 interface Props {
   sectionData: VideosListSection;
@@ -31,11 +32,7 @@ const VideoListSection = ({ sectionData }: Props) => {
         </div>
 
         <div className={styles['subscribe-paginate-container']}>
-          {sectionData.subscribeButton && (
-            <button className={styles['subscribe-button']}>
-              Subscribe 2.3m
-            </button>
-          )}
+          {sectionData.subscribeButton && <SubscribeButton />}
           <Pagination />
         </div>
       </div>

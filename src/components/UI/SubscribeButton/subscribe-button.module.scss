@@ -1,0 +1,12 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+
+.button {
+  width: 15.4rem;
+  height: 4rem;
+
+  font-size: 1.6rem;
+  color: variables.$color-text-xs;
+
+  background-color: variables.$color-accent;
+  border-radius: 2rem;
+}

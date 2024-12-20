@@ -6,6 +6,7 @@ import ButtonIcon from '../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { channelPage } from '../../data/channel-page.ts';
 import styles from './channel-page.module.scss';
 import ChannelPageNav from './ChannelPageNav/ChannelPageNav.tsx';
+import SubscribeButton from '../../components/UI/SubscribeButton/SubscribeButton.tsx';
 
 const ChannelPage = () => {
   return (
@@ -25,13 +26,14 @@ const ChannelPage = () => {
           </div>
         </div>
 
-        <div>
+        <div className={styles['subscribe-block-container']}>
           <ButtonIcon
             icon={notificationIcon}
             label="Subscribe"
             width="22"
             height="26"
           />
+          <SubscribeButton />
         </div>
       </section>
       <ChannelPageNav />

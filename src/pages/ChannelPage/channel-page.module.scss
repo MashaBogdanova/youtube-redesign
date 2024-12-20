@@ -26,6 +26,12 @@
   gap: 1.4rem;
 }
 
+.subscribe-block-container {
+  display: flex;
+  align-self: start;
+  align-items: center;
+  gap: 2rem;
+}
 
 .subscribed {
   @include mixins.statistics-text;
