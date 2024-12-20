@@ -4,16 +4,17 @@ import channelIcon from '../../assets/channel-page/channel-icon.png';
 import notificationIcon from '../../assets/ui-icons/notifications-icon.svg';
 import ButtonIcon from '../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import SubscribeButton from '../../components/UI/SubscribeButton/SubscribeButton.tsx';
-import { channelPage } from '../../data/channel-page.ts';
+import VideoListSection from '../../components/UI/VideoListSection/VideoListSection.tsx';
+import { channelPage, channelPageVideosList } from '../../data/channel-page.ts';
 import styles from './channel-page.module.scss';
 import ChannelPageNav from './ChannelPageNav/ChannelPageNav.tsx';
 import MainChannelVideo from './MainChannelVideo/MainChannelVideo.tsx';
 
 const ChannelPage = () => {
   return (
-    <main className={styles['channel-page']}>
+    <main>
       <section className={styles.banner}>
-        <img src={channelPage.channelBanner} alt="" />
+        <img src={channelPage.channelBanner} alt="" width="1595" height="280" />
       </section>
 
       <section className={styles['title-section']}>
@@ -39,8 +40,8 @@ const ChannelPage = () => {
       </section>
 
       <ChannelPageNav />
-
       <MainChannelVideo />
+      <VideoListSection sectionData={channelPageVideosList} />
     </main>
   );
 };

@@ -1,12 +1,9 @@
 @use '../../sass/abstracts/variables.module' as variables;
 @use '../../sass/abstracts/mixins.module' as mixins;
 
-.channel-page {
-  padding-right: variables.$channel-page-right-spacing;
-}
-
 .banner {
   margin-bottom: 2.6rem;
+  padding-right: variables.$channel-page-right-spacing;
 }
 
 .title-section {
@@ -14,8 +11,9 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
   margin-bottom: 2rem;
+  // todo: check why not 7?
+  padding-right: 10rem;
 }
 
 .icon-title-container {
