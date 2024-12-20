@@ -10,40 +10,26 @@ import video3 from '../assets/home-page/recommended-channel/video3.png';
 import video4 from '../assets/home-page/recommended-channel/video4.png';
 import video5 from '../assets/home-page/recommended-channel/video5.png';
 import video6 from '../assets/home-page/recommended-channel/video6.png';
-import { VideoData } from '../types/videos-list-section.ts';
+import { MainVideoData, VideoData } from '../types/videos-list-section.ts';
 
 export interface ChannelPage {
   channelBanner: string;
   channelTitle: string;
   channelIcon: string;
   subscribersCount: string;
-  mainVideoCover: string;
-  mainVideoTitle: string;
-  mainVideoTime: string;
-  viewsCount: string;
-  whenAdded: string;
-  mainVideoDescription: string;
   recommendedChannels: {
     icon: string;
     name: string;
   }[];
+  mainChannelVideo: MainVideoData;
   channelVideos: VideoData[];
 }
+
 export const channelPage: ChannelPage = {
   channelBanner: channelBanner,
   channelTitle: 'Margaret Phelps',
   channelIcon: channelIcon,
   subscribersCount: '245K',
-  mainVideoCover: mainVideoCover,
-  mainVideoTitle: 'Choosing The Best Audio Player Software For Your Computer',
-  mainVideoTime: '7:36',
-  viewsCount: '11k',
-  whenAdded: '6 months',
-  mainVideoDescription:
-    'Your cheap internet-based banner advertising will become one of the sought ' +
-    'for ads there are. Today, the world of Internet advertising is rapidly ' +
-    'evolving beyond banner ads and intrusive pop-ups. Bayles A common medium ' +
-    'for advertising on the Internet is the use of banner ads.',
   recommendedChannels: [
     { icon: recommendedChannel1, name: 'Flora Benson' },
     {
@@ -55,6 +41,19 @@ export const channelPage: ChannelPage = {
       name: 'Phillip Mullins',
     },
   ],
+  mainChannelVideo: {
+    title: 'Choosing The Best Audio Player Software For Your Computer',
+    description:
+      'Your cheap internet-based banner advertising will become one of the sought ' +
+      'for ads there are. Today, the world of Internet advertising is rapidly ' +
+      'evolving beyond banner ads and intrusive pop-ups. Bayles A common medium ' +
+      'for advertising on the Internet is the use of banner ads.',
+    author: 'Margaret Phelps',
+    time: '7:36',
+    viewsCount: '11k',
+    whenAdded: '6 months',
+    icon: mainVideoCover,
+  },
   channelVideos: [
     {
       title: 'Astronomy Or Astrology',

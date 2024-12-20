@@ -3,8 +3,9 @@ import { Link } from 'react-router';
 
 import { VideosListSection } from '../../../types/videos-list-section.ts';
 import Pagination from '../Pagination/Pagination.tsx';
-import styles from './video-list-section.module.scss';
 import SubscribeButton from '../SubscribeButton/SubscribeButton.tsx';
+import styles from './video-list-section.module.scss';
+import VideoCover from '../VideoCover/VideoCover.tsx';
 
 interface Props {
   sectionData: VideosListSection;
@@ -41,11 +42,9 @@ const VideoListSection = ({ sectionData }: Props) => {
         {sectionData.videos.map((video) => {
           return (
             <li aria-label={video.title} key={`${video.author}${video.title}`}>
-              <Link to="#" className={styles['icon-container']}>
-                <img src={video.icon} alt="" />
-                <span className={styles.time}>{video.time}</span>
+              <Link to="#">
+                <VideoCover icon={video.icon} time={video.time} />
               </Link>
-
               <h4 className={styles['video-title']}>
                 <Link to="#">{video.title}</Link>
               </h4>

@@ -3,10 +3,11 @@ import React from 'react';
 import channelIcon from '../../assets/channel-page/channel-icon.png';
 import notificationIcon from '../../assets/ui-icons/notifications-icon.svg';
 import ButtonIcon from '../../components/UI/ButtonIcon/ButtonIcon.tsx';
+import SubscribeButton from '../../components/UI/SubscribeButton/SubscribeButton.tsx';
 import { channelPage } from '../../data/channel-page.ts';
 import styles from './channel-page.module.scss';
 import ChannelPageNav from './ChannelPageNav/ChannelPageNav.tsx';
-import SubscribeButton from '../../components/UI/SubscribeButton/SubscribeButton.tsx';
+import VideoCover from '../../components/UI/VideoCover/VideoCover.tsx';
 
 const ChannelPage = () => {
   return (
@@ -36,7 +37,15 @@ const ChannelPage = () => {
           <SubscribeButton />
         </div>
       </section>
+
       <ChannelPageNav />
+
+      <section className={styles['main-video-section']}>
+        <VideoCover
+          icon={channelPage.mainChannelVideo.icon}
+          time={channelPage.mainChannelVideo.time}
+        />
+      </section>
     </main>
   );
 };

@@ -14,3 +14,7 @@ export interface VideoData {
   whenAdded: string;
   icon: string;
 }
+
+export interface MainVideoData extends VideoData {
+  description: string;
+}

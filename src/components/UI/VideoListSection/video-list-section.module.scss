@@ -43,31 +43,6 @@
   gap: 4rem;
 }
 
-.icon-container {
-  position: relative;
-  display: block;
-  margin-bottom: 0.7rem;
-}
-
-.time {
-  position: absolute;
-  bottom: 1.4rem;
-  right: 0.9rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 4.7rem;
-  height: 2.4rem;
-
-  font-size: 1.4rem;
-  color: variables.$color-text-xs;
-
-  background-color: variables.$color-text-xxl-transparent;
-  border-radius: 1.2rem;
-}
-
 .video-title {
   margin-bottom: 0.4rem;
   font-weight: bold;
