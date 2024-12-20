@@ -17,18 +17,3 @@
 .subscribed {
   @include mixins.statistics-text;
 }
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 7rem;
-
-  font-size: 1.8rem;
-}
-
-.active-nav-link {
-  font-weight: bold;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  color: variables.$color-accent
-}
