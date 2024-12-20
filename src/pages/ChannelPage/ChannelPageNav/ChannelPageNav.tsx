@@ -15,6 +15,7 @@ const ChannelPageNav = () => {
             label={item.title!}
             width="19"
             height="19"
+            key={item.title}
           />
         ) : (
           <NavLink
@@ -22,6 +23,7 @@ const ChannelPageNav = () => {
             className={({ isActive }) =>
               isActive ? styles['active-nav-link'] : ''
             }
+            key={item.title}
           >
             {item.title!}
           </NavLink>
