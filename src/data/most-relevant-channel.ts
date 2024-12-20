@@ -17,7 +17,7 @@ export const mostRelevantChannel: VideosListSection = {
       time: '4:15',
       viewsCount: '80k',
       whenAdded: '3 days',
-      icon: video1,
+      cover: video1,
     },
     {
       title: 'Selecting The Right Hotel',
@@ -25,7 +25,7 @@ export const mostRelevantChannel: VideosListSection = {
       time: '8:00',
       viewsCount: '123k',
       whenAdded: '1 months',
-      icon: video2,
+      cover: video2,
     },
     {
       title: 'Asteroids',
@@ -33,7 +33,7 @@ export const mostRelevantChannel: VideosListSection = {
       time: '5:32',
       viewsCount: '43k',
       whenAdded: '12 days',
-      icon: video3,
+      cover: video3,
     },
     {
       title: 'Telescopes 101',
@@ -41,7 +41,7 @@ export const mostRelevantChannel: VideosListSection = {
       time: '6:40',
       viewsCount: '11k',
       whenAdded: '6 months',
-      icon: video4,
+      cover: video4,
     },
     {
       title: 'Medical Care Is Just',
@@ -49,7 +49,7 @@ export const mostRelevantChannel: VideosListSection = {
       time: '1:45',
       viewsCount: '18k',
       whenAdded: '2 days',
-      icon: video5,
+      cover: video5,
     },
     {
       title: 'Moon Gazing',
@@ -57,7 +57,7 @@ export const mostRelevantChannel: VideosListSection = {
       time: '2:12',
       viewsCount: '67k',
       whenAdded: '4 months',
-      icon: video6,
+      cover: video6,
     },
   ],
 };

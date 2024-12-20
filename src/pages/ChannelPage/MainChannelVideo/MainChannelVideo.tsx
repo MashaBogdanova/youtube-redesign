@@ -8,7 +8,7 @@ const MainChannelVideo = () => {
   return (
     <section className={styles['main-video']}>
       <VideoCover
-        icon={channelPage.mainChannelVideo.icon}
+        icon={channelPage.mainChannelVideo.cover}
         time={channelPage.mainChannelVideo.time}
       />
       <div className={styles['title-description-container']}>

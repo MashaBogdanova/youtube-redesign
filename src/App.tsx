@@ -1,7 +1,8 @@
 import styles from './app.module.scss';
 import Header from './components/Header/Header.tsx';
 import SideMenu from './components/SideMenu/SideMenu.tsx';
-import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
+// import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
+import VideoPlayerPage from './pages/VideoPlayerPage/VideoPlayerPage.tsx';
 // import HomePage from './pages/HomePage/HomePage.tsx';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <SideMenu />
       {/*<HomePage />*/}
-      <ChannelPage />
+      {/*<ChannelPage />*/}
+      <VideoPlayerPage />
     </div>
   );
 }

@@ -43,7 +43,7 @@ const VideoListSection = ({ sectionData }: Props) => {
           return (
             <li aria-label={video.title} key={`${video.author}${video.title}`}>
               <Link to="#">
-                <VideoCover icon={video.icon} time={video.time} />
+                <VideoCover icon={video.cover} time={video.time} />
               </Link>
               <h4 className={styles['video-title']}>
                 <Link to="#">{video.title}</Link>

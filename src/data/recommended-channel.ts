@@ -19,7 +19,7 @@ export const recommendedChannel: VideosListSection = {
       time: '7:36',
       viewsCount: '240k',
       whenAdded: '4 months',
-      icon: video1,
+      cover: video1,
     },
     {
       title: 'Advertising Outdoors',
@@ -27,7 +27,7 @@ export const recommendedChannel: VideosListSection = {
       time: '2:19',
       viewsCount: '13k',
       whenAdded: '15 days',
-      icon: video2,
+      cover: video2,
     },
     {
       title: 'Radio Astronomy',
@@ -35,7 +35,7 @@ export const recommendedChannel: VideosListSection = {
       time: '9:05',
       viewsCount: '1k',
       whenAdded: '11 months',
-      icon: video3,
+      cover: video3,
     },
     {
       title: 'A Good Autoresponder',
@@ -43,7 +43,7 @@ export const recommendedChannel: VideosListSection = {
       time: '3:40',
       viewsCount: '45k',
       whenAdded: '2 months',
-      icon: video4,
+      cover: video4,
     },
     {
       title: 'Baby Monitor Technology',
@@ -51,7 +51,7 @@ export const recommendedChannel: VideosListSection = {
       time: '1:56',
       viewsCount: '86k',
       whenAdded: '7 days',
-      icon: video5,
+      cover: video5,
     },
     {
       title: 'Asteroids',
@@ -59,7 +59,7 @@ export const recommendedChannel: VideosListSection = {
       time: '4:15',
       viewsCount: '123k',
       whenAdded: '4 months',
-      icon: video6,
+      cover: video6,
     },
   ],
 };
