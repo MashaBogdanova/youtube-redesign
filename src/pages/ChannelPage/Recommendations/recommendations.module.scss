@@ -1,0 +1,26 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+
+.recommendations {
+  position: absolute;
+  top: 41.2rem;
+  right: 19rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  color: variables.$color-text-s;
+}
+
+.item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: variables.$color-text-xl;
+}

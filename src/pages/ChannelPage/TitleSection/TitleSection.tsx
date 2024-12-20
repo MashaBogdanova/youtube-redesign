@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './title-section.module.scss';
+
 import channelIcon from '../../../assets/channel-page/channel-icon.png';
-import { channelPage } from '../../../data/channel-page.ts';
-import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import notificationIcon from '../../../assets/ui-icons/notifications-icon.svg';
+import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import SubscribeButton from '../../../components/UI/SubscribeButton/SubscribeButton.tsx';
+import { channelPage } from '../../../data/channel-page.ts';
+import styles from './title-section.module.scss';
 
 const TitleSection = () => {
   return (

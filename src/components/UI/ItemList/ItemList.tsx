@@ -1,8 +1,14 @@
 import React from 'react';
 
-import styles from './nav-list.module.scss';
+import { ListItem } from '../../../types/list-item.ts';
+import styles from './item-list.module.scss';
 
-const NavList = ({ items, itemsGap = '2.9rem' }) => {
+interface Props {
+  items: ListItem[];
+  itemsGap?: string;
+}
+
+const ItemList = ({ items, itemsGap = '2.9rem' }: Props) => {
   return (
     <ul className={styles.list} style={{ gap: itemsGap }}>
       {items.map((item) => {
@@ -21,4 +27,4 @@ const NavList = ({ items, itemsGap = '2.9rem' }) => {
   );
 };
 
-export default NavList;
+export default ItemList;

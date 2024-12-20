@@ -10,11 +10,16 @@ import video3 from '../assets/channel-page/channel-video-3.png';
 import video4 from '../assets/channel-page/channel-video-4.png';
 import video5 from '../assets/channel-page/channel-video-5.png';
 import video6 from '../assets/channel-page/channel-video-6.png';
+import recommendation1 from '../assets/channel-page/recommendation1.svg';
+import recommendation2 from '../assets/channel-page/recommendation2.svg';
+import recommendation3 from '../assets/channel-page/recommendation3.svg';
+
 import {
   MainVideoData,
   VideoData,
   VideosListSection,
 } from '../types/videos-list-section.ts';
+import { ListItem } from '../types/list-item.ts';
 
 export interface ChannelPage {
   channelBanner: string;
@@ -117,3 +122,18 @@ export const channelPageVideosList: VideosListSection = {
   videos: channelVideos,
   subscribeButton: false,
 };
+
+export const recommendations: ListItem[] = [
+  {
+    itemName: 'Flora Benson',
+    icon: recommendation1,
+  },
+  {
+    itemName: 'Violet Cobb',
+    icon: recommendation2,
+  },
+  {
+    itemName: 'Phillip Mullins',
+    icon: recommendation3,
+  },
+];

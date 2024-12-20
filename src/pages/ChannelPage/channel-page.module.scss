@@ -1,5 +1,9 @@
 @use '../../sass/abstracts/variables.module' as variables;
 
+.channel-page {
+  position: relative;
+}
+
 .banner {
   margin-bottom: 2.6rem;
   padding-right: variables.$channel-page-right-spacing;

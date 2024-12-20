@@ -1,4 +1,4 @@
-import { NavListItems } from '../types/nav-list-Items.ts';
+import { ListItem } from '../types/list-item.ts';
 import home from '../assets/nav-icons/home.svg';
 import trending from '../assets/nav-icons/trending.svg';
 import subscriptions from '../assets/nav-icons/subscriptions.svg';
@@ -11,12 +11,12 @@ import music from '../assets/nav-icons/music.svg';
 import games from '../assets/nav-icons/games.svg';
 import arrow from '../assets/nav-icons/expand-menu-arrow.svg';
 
-export const baseItems: NavListItems[] = [
+export const baseItems: ListItem[] = [
   { icon: home, itemName: 'Home' },
   { icon: trending, itemName: 'Trending' },
   { icon: subscriptions, itemName: 'Subscriptions' },
 ];
-export const additionalItems: NavListItems[] = [
+export const additionalItems: ListItem[] = [
   { icon: library, itemName: 'Library' },
   { icon: history, itemName: 'History' },
   { icon: watch, itemName: 'Watch later' },

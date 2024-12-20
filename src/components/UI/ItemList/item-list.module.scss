@@ -8,6 +8,7 @@
 
 .item {
   display: flex;
-  gap: 1.3rem;
+  align-items: center;
+  gap: 1.7rem;
   color: variables.$color-text-l;
 }

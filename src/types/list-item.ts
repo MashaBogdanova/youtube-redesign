@@ -1,4 +1,4 @@
-export interface NavListItems {
+export interface ListItem {
   icon: string;
   itemName: string;
 }
