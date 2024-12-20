@@ -4,8 +4,8 @@ import { Link } from 'react-router';
 import { VideosListSection } from '../../../types/videos-list-section.ts';
 import Pagination from '../Pagination/Pagination.tsx';
 import SubscribeButton from '../SubscribeButton/SubscribeButton.tsx';
-import styles from './video-list-section.module.scss';
 import VideoCover from '../VideoCover/VideoCover.tsx';
+import styles from './video-list-section.module.scss';
 
 interface Props {
   sectionData: VideosListSection;

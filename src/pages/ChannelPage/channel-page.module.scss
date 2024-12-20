@@ -16,14 +16,16 @@
 
   width: 100%;
   margin-bottom: 2rem;
-
-  @include mixins.title;
 }
 
 .icon-title-container {
   display: flex;
   align-items: center;
   gap: 1.4rem;
+}
+
+.title {
+  @include mixins.title;
 }
 
 .subscribe-block-container {
@@ -36,3 +38,5 @@
 .subscribed {
   @include mixins.statistics-text;
 }
+
+

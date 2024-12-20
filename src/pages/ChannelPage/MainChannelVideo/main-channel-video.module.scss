@@ -1,0 +1,32 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
+
+.main-video {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.title-description-container {
+  width: 55rem;
+  transform: translateY(-0.5rem);
+}
+
+.title {
+  width: 50rem;
+  margin-bottom: 1rem;
+  line-height: 3.4rem;
+  @include mixins.title;
+}
+
+.description {
+  margin-bottom: 3rem;
+  line-height: 2.2rem;
+}
+
+.statistics {
+  display: flex;
+  gap: 0.9rem;
+  color: variables.$color-text-s;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './video-cover.module.scss';
 
 const VideoCover = ({ icon, time }) => {

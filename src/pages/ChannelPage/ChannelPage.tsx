@@ -7,7 +7,7 @@ import SubscribeButton from '../../components/UI/SubscribeButton/SubscribeButton
 import { channelPage } from '../../data/channel-page.ts';
 import styles from './channel-page.module.scss';
 import ChannelPageNav from './ChannelPageNav/ChannelPageNav.tsx';
-import VideoCover from '../../components/UI/VideoCover/VideoCover.tsx';
+import MainChannelVideo from './MainChannelVideo/MainChannelVideo.tsx';
 
 const ChannelPage = () => {
   return (
@@ -20,7 +20,7 @@ const ChannelPage = () => {
         <div className={styles['icon-title-container']}>
           <img src={channelIcon} alt="" />
           <div>
-            <h1>{channelPage.channelTitle}</h1>
+            <h1 className={styles.title}>{channelPage.channelTitle}</h1>
             <p className={styles.subscribed}>
               {channelPage.subscribersCount} subscribed
             </p>
@@ -40,12 +40,7 @@ const ChannelPage = () => {
 
       <ChannelPageNav />
 
-      <section className={styles['main-video-section']}>
-        <VideoCover
-          icon={channelPage.mainChannelVideo.icon}
-          time={channelPage.mainChannelVideo.time}
-        />
-      </section>
+      <MainChannelVideo />
     </main>
   );
 };
