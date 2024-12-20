@@ -1,7 +1,8 @@
 import React from 'react';
-import { channelPageNavItems } from '../../../config/channel-page-nav-items.ts';
-import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { NavLink } from 'react-router';
+
+import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
+import { channelPageNavItems } from '../../../config/channel-page-nav-items.ts';
 import styles from './channel-page-nav.module.scss';
 
 const ChannelPageNav = () => {
