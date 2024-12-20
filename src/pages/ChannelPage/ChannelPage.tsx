@@ -1,11 +1,11 @@
 import React from 'react';
 
 import channelIcon from '../../assets/channel-page/channel-icon.png';
+import notificationIcon from '../../assets/ui-icons/notifications-icon.svg';
+import ButtonIcon from '../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { channelPage } from '../../data/channel-page.ts';
 import styles from './channel-page.module.scss';
 import ChannelPageNav from './ChannelPageNav/ChannelPageNav.tsx';
-import notificationIcon from '../../assets/ui-icons/notifications-icon.svg';
-import ButtonIcon from '../../components/UI/ButtonIcon/ButtonIcon.tsx';
 
 const ChannelPage = () => {
   return (
