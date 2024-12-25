@@ -1,0 +1,22 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+
+  background-color: variables.$color-background-s-transparent;
+  border-radius: variables.$progress-bar-border-radius;
+}
+
+.current-progress {
+  position: absolute;
+  left: 0;
+  height: 100%;
+
+  background-color: variables.$color-background-s;
+  border-radius: variables.$progress-bar-border-radius;
+}
+
+.current-progress-accent {
+  background-color: variables.$color-accent;
+}

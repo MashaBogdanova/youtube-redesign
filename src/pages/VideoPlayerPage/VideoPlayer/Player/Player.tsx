@@ -8,6 +8,7 @@ import screenWidthIcon from '../../../../assets/video-player-page/video-player/s
 import soundIcon from '../../../../assets/video-player-page/video-player/sound-icon.svg';
 import subtitlesIcon from '../../../../assets/video-player-page/video-player/subtitles-icon.svg';
 import ButtonIcon from '../../../../components/UI/ButtonIcon/ButtonIcon.tsx';
+import ProgressBar from '../../../../components/UI/ProgressBar/ProgressBar.tsx';
 import { videoPlayerPage } from '../../../../data/video-player-page.ts';
 import styles from './player.module.scss';
 
@@ -22,7 +23,7 @@ const Player = () => {
           <p>{videoPlayerPage.time}</p>
         </div>
 
-        <div className={styles['progress-bar']} />
+        <ProgressBar height={10} progress={280} accent />
 
         <div className={styles['buttons-container']}>
           <div className={styles['left-buttons-container']}>
@@ -33,7 +34,8 @@ const Player = () => {
               width="27"
               height="18"
             />
-            <div>
+
+            <div className={styles['volume-container']}>
               <ButtonIcon
                 icon={soundIcon}
                 label="Mute / Unmute"

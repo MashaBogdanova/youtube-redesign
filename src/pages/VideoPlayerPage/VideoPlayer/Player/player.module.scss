@@ -26,28 +26,6 @@
   color: variables.$color-text-xs;
 }
 
-.progress-bar {
-  position: relative;
-
-  width: 100%;
-  height: 1rem;
-
-  background-color: variables.$color-background-s-transparent;
-  border-radius: variables.$progress-bar-border-radius;
-}
-
-.progress-bar:before {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  width: 28rem;
-  height: 100%;
-
-  background-color: variables.$color-accent;
-  border-radius: variables.$progress-bar-border-radius;
-}
-
 .buttons-container {
   display: flex;
   align-items: center;
@@ -58,6 +36,13 @@
 .left-buttons-container {
   display: flex;
   gap: 4rem;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 13rem;
 }
 
 .right-buttons-container {
