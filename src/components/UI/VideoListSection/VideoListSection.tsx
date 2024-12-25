@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import { VideosListSection } from '../../../types/videos-list-section.ts';
 import Pagination from '../Pagination/Pagination.tsx';
 import SubscribeButton from '../SubscribeButton/SubscribeButton.tsx';
-import VideoCover from '../VideoCover/VideoCover.tsx';
 import styles from './video-list-section.module.scss';
+import VideosList from '../VideosList/VideosList.tsx';
 
 interface Props {
   sectionData: VideosListSection;
@@ -38,29 +37,7 @@ const VideoListSection = ({ sectionData }: Props) => {
         </div>
       </div>
 
-      <ul className={styles['video-list']}>
-        {sectionData.videos.map((video) => {
-          return (
-            <li aria-label={video.title} key={`${video.author}${video.title}`}>
-              <Link to="#">
-                <VideoCover icon={video.cover} time={video.time} />
-              </Link>
-              <h4 className={styles['video-title']}>
-                <Link to="#">{video.title}</Link>
-              </h4>
-
-              <div className={styles['additional-information']}>
-                <div className={styles['views-date-container']}>
-                  <span>{video.viewsCount} views</span>
-                  <span>·</span>
-                  <span>{video.whenAdded} ago</span>
-                </div>
-                <Link to="#">{video.author}</Link>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+      <VideosList videos={sectionData.videos} />
     </section>
   );
 };

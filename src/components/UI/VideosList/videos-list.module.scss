@@ -1,0 +1,26 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+
+.video-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.video-title {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: variables.$color-text-xl;
+}
+
+.additional-information {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.3rem;
+  color: variables.$color-text-s;
+  white-space: nowrap;
+}
+
+.views-date-container {
+  display: flex;
+  gap: 0.8rem;
+}
