@@ -1,6 +1,6 @@
 @use '../../../sass/abstracts/variables.module' as variables;
 
-.title-statistics-container {
+.container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -29,10 +29,4 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.description-subscribe-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3.8rem;
 }

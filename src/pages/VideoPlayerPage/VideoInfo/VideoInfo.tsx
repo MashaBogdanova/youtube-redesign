@@ -1,10 +1,10 @@
 import React from 'react';
 
-import ButtonIcon from '../../../../components/UI/ButtonIcon/ButtonIcon.tsx';
-import { videoPlayerPage } from '../../../../data/video-player-page.ts';
-import styles from './videi-description.module.scss';
+import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
+import { videoPlayerPage } from '../../../data/video-player-page.ts';
+import styles from './videi-info.module.scss';
 
-const VideoDescription = () => {
+const VideoInfo = () => {
   return (
     <article className={styles.container}>
       <ButtonIcon
@@ -28,4 +28,4 @@ const VideoDescription = () => {
   );
 };
 
-export default VideoDescription;
+export default VideoInfo;

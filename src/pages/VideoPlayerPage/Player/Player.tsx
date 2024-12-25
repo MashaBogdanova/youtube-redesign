@@ -1,16 +1,16 @@
 import React from 'react';
 
-import fullScreenIcon from '../../../../assets/video-player-page/video-player/full-screen-icon.svg';
-import nextIcon from '../../../../assets/video-player-page/video-player/next-icon.svg';
-import pauseIcon from '../../../../assets/video-player-page/video-player/pause-icon.svg';
-import settingsIcon from '../../../../assets/video-player-page/video-player/settings-icon.svg';
-import screenWidthIcon from '../../../../assets/video-player-page/video-player/size-icon.svg';
-import soundIcon from '../../../../assets/video-player-page/video-player/sound-icon.svg';
-import subtitlesIcon from '../../../../assets/video-player-page/video-player/subtitles-icon.svg';
-import ButtonIcon from '../../../../components/UI/ButtonIcon/ButtonIcon.tsx';
-import { videoPlayerPage } from '../../../../data/video-player-page.ts';
+import fullScreenIcon from '../../../assets/video-player-page/video-player/full-screen-icon.svg';
+import nextIcon from '../../../assets/video-player-page/video-player/next-icon.svg';
+import pauseIcon from '../../../assets/video-player-page/video-player/pause-icon.svg';
+import settingsIcon from '../../../assets/video-player-page/video-player/settings-icon.svg';
+import screenWidthIcon from '../../../assets/video-player-page/video-player/size-icon.svg';
+import soundIcon from '../../../assets/video-player-page/video-player/sound-icon.svg';
+import subtitlesIcon from '../../../assets/video-player-page/video-player/subtitles-icon.svg';
+import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
+import ProgressBar from '../../../components/UI/ProgressBar/ProgressBar.tsx';
+import { videoPlayerPage } from '../../../data/video-player-page.ts';
 import styles from './player.module.scss';
-import ProgressBar from '../../../../components/UI/ProgressBar/ProgressBar.tsx';
 
 const Player = () => {
   return (
