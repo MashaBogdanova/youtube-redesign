@@ -40,6 +40,8 @@ const VideoPlayer = () => {
           />
         </div>
       </div>
+
+      <hr />
     </article>
   );
 };
