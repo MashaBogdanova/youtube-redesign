@@ -12,7 +12,7 @@ export const videoPlayerPage: VideoPlayer = {
   author: 'Food & Drink',
   channelIcon,
   time: '19:00',
-  currentTime: '1.34',
+  currentTime: '1:34',
   viewsCount: '123k',
   likesCount: '123k',
   dislikesCount: '435k',

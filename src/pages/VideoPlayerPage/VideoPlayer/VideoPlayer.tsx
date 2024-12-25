@@ -6,13 +6,14 @@ import StatisticsButton from '../../../components/UI/StatisticsButton/Statistics
 import SubscribeButton from '../../../components/UI/SubscribeButton/SubscribeButton.tsx';
 import { videoPlayerStatistics } from '../../../config/video-player-statistics.ts';
 import { videoPlayerPage } from '../../../data/video-player-page.ts';
+import Player from './Player/Player.tsx';
 import styles from './video-player.module.scss';
 import VideoDescription from './VideoDescription/VideoDescription.tsx';
 
 const VideoPlayer = () => {
   return (
     <article className={styles['player-container']}>
-      <img className={styles.player} src={videoPlayerPage.cover} alt="" />
+      <Player />
 
       <div className={styles['title-statistics-container']}>
         <div>

@@ -1,6 +1,7 @@
 // Colors
 
 $color-background-s: #ffffff;
+$color-background-s-transparent: rgba(255, 255, 255, 0.2);
 $color-background-m: rgba(235, 235, 235, 0.3);
 
 $color-text-xs: #ffffff;
@@ -25,3 +26,7 @@ $body-left-padding: 3rem;
 $content-left-spacing: 22.5rem;
 $channel-page-right-spacing: 7rem;
 $pagination-right-spacing: 18rem;
+
+// Player
+$player-spacing: 3.3rem;
+$progress-bar-border-radius: 0.5rem;
