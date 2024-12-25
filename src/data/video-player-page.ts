@@ -1,13 +1,16 @@
 import videoCover from '../assets/video-player-page/video-cover.png';
 import { VideoData } from '../types/videoData.ts';
+import channelIcon from '../assets/video-player-page/channel-icon.svg';
 
 interface VideoPlayer extends VideoData {
   currentTime: string;
+  channelIcon: string;
 }
 
 export const videoPlayerPage: VideoPlayer = {
   title: 'Dude You Re Getting A Telescope',
   author: 'Food & Drink',
+  channelIcon,
   time: '19:00',
   currentTime: '1.34',
   viewsCount: '123k',

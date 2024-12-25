@@ -1,0 +1,36 @@
+@use '../../../../sass/abstracts/variables.module' as variables;
+@use '../../../../sass/abstracts/mixins.module' as mixins;
+
+.container {
+  display: flex;
+  gap: 1.2rem;
+  align-items: start;
+  width: 91.2rem;
+  transform: translateX(-0.5rem);
+}
+
+.information {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  margin-bottom: 0.4rem;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.published {
+  @include mixins.statistics-text();
+}
+
+.description {
+  line-height: 2.2rem;
+}
+
+.show-more-button {
+  font-size: 2rem;
+  color: variables.$color-text-s;
+}
