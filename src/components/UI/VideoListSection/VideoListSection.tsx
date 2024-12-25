@@ -3,8 +3,8 @@ import React from 'react';
 import { VideosListSection } from '../../../types/videos-list-section.ts';
 import Pagination from '../Pagination/Pagination.tsx';
 import SubscribeButton from '../SubscribeButton/SubscribeButton.tsx';
-import styles from './video-list-section.module.scss';
 import VideosList from '../VideosList/VideosList.tsx';
+import styles from './video-list-section.module.scss';
 
 interface Props {
   sectionData: VideosListSection;

@@ -1,0 +1,46 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+
+.container {
+  display: flex;
+  align-items: center;
+  align-self: end;
+  gap: 1.1rem;
+}
+
+.label {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.toggle {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 4.4rem;
+  height: 2.8rem;
+
+  background-color: variables.$color-background-m;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+
+.slider:before {
+  content: "";
+
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  background-color: variables.$color-toggle;
+  border-radius: 50%;
+  transition: transform 200ms ease-out;
+}
+
+.toggle:checked + .slider:before {
+  transform: translateX(-1.6rem);
+}

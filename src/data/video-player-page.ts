@@ -1,6 +1,10 @@
 import videoCover from '../assets/video-player-page/video-cover.png';
 import { VideoData } from '../types/videoData.ts';
 import channelIcon from '../assets/video-player-page/channel-icon.svg';
+import nextVideo1 from '../assets/video-player-page/next-videos/next-video-1.png';
+import nextVideo2 from '../assets/video-player-page/next-videos/next-video-2.png';
+import nextVideo3 from '../assets/video-player-page/next-videos/next-video-3.png';
+import nextVideo4 from '../assets/video-player-page/next-videos/next-video-4.png';
 
 interface VideoPlayer extends VideoData {
   currentTime: string;
@@ -26,3 +30,34 @@ export const videoPlayerPage: VideoPlayer = {
     'factors, including ad placement, demographic, even the consumer’s mood ' +
     'when they see your ad. ',
 };
+
+export const nextVideos: VideoData[] = [
+  {
+    title: 'Baby Monitor Technology',
+    author: 'Dollie Blair',
+    time: '8:00',
+    viewsCount: '123k',
+    cover: nextVideo1,
+  },
+  {
+    title: 'A Good Autoresponder',
+    author: 'Dollie Blair',
+    time: '8:00',
+    viewsCount: '123k',
+    cover: nextVideo2,
+  },
+  {
+    title: 'Selecting The Right Hotel',
+    author: 'Dollie Blair',
+    time: '8:00',
+    viewsCount: '123k',
+    cover: nextVideo3,
+  },
+  {
+    title: 'Selecting The Right Hotel',
+    author: 'Dollie Blair',
+    time: '8:00',
+    viewsCount: '123k',
+    cover: nextVideo4,
+  },
+];

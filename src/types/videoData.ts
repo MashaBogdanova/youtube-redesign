@@ -6,7 +6,7 @@ export interface VideoData {
   viewsCount: string;
   likesCount?: string;
   dislikesCount?: string;
-  whenAdded: string;
+  whenAdded?: string;
   cover: string;
   description?: string;
 }
