@@ -1,4 +1,15 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+
 .button {
   display: flex;
-  gap: 0.8rem
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 4rem;
+
+  font-size: 1.6rem;
+
+  background-color: variables.$color-background-m;
+  border-radius: 2rem;
 }

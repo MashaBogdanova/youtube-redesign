@@ -1,9 +1,10 @@
-import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
-import VideoPlayerPage from './pages/VideoPlayerPage/VideoPlayerPage.tsx';
 import { Route, Routes } from 'react-router';
-import HomePage from './pages/HomePage/HomePage.tsx';
+
 import MainLayout from './components/layouts/MainLayout/MainLayout.tsx';
 import VideoPlayerPageLayout from './components/layouts/VideoPlayerPageLayout/VideoPlayerPageLayout.tsx';
+import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
+import HomePage from './pages/HomePage/HomePage.tsx';
+import VideoPlayerPage from './pages/VideoPlayerPage/VideoPlayerPage.tsx';
 
 function App() {
   return (

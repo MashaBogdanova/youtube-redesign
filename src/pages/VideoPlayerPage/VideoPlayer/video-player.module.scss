@@ -1,8 +1,40 @@
-.player {
+@use '../../../sass/abstracts/variables.module' as variables;
 
+.player-container {
+
+}
+
+.player {
+  margin-bottom: 1.5rem;
+}
+
+.title-statistics-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.views {
+  font-size: 2rem;
+  color: variables.$color-text-s;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  align-self: end;
+  gap: 4rem;
+  transform: translateY(0.5rem);
 }
 
 .statistics-buttons-container {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
+
