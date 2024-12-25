@@ -1,0 +1,8 @@
+.layout {
+  display: grid;
+  gap: 3rem;
+  grid-template-areas:
+    "header"
+    "main";
+  grid-template-rows: auto auto;
+}

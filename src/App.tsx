@@ -1,19 +1,21 @@
-import styles from './app.module.scss';
-import Header from './components/Header/Header.tsx';
-import SideMenu from './components/SideMenu/SideMenu.tsx';
-// import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
+import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
 import VideoPlayerPage from './pages/VideoPlayerPage/VideoPlayerPage.tsx';
-// import HomePage from './pages/HomePage/HomePage.tsx';
+import { Route, Routes } from 'react-router';
+import HomePage from './pages/HomePage/HomePage.tsx';
+import MainLayout from './components/layouts/MainLayout/MainLayout.tsx';
+import VideoPlayerPageLayout from './components/layouts/VideoPlayerPageLayout/VideoPlayerPageLayout.tsx';
 
 function App() {
   return (
-    <div className={styles.layout}>
-      <Header />
-      <SideMenu />
-      {/*<HomePage />*/}
-      {/*<ChannelPage />*/}
-      <VideoPlayerPage />
-    </div>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/channel" element={<ChannelPage />} />
+      </Route>
+      <Route element={<VideoPlayerPageLayout />}>
+        <Route path="/player" element={<VideoPlayerPage />} />
+      </Route>
+    </Routes>
   );
 }
 
