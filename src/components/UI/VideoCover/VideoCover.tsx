@@ -4,8 +4,8 @@ import styles from './video-cover.module.scss';
 
 const VideoCover = ({ icon, time }) => {
   return (
-    <div className={styles['icon-container']}>
-      <img src={icon} alt="" />
+    <div className={styles.container}>
+      <img className={styles.cover} src={icon} alt="" />
       <span className={styles.time}>{time}</span>
     </div>
   );

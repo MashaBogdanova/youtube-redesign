@@ -4,6 +4,11 @@
 .list {
   display: flex;
   gap: 4rem;
+
+  @include mixins.media-mobile {
+    flex-direction: column;
+    gap: 3.1rem;
+  }
 }
 
 .vertical-list {

@@ -1,14 +1,10 @@
 @use '../../../sass/abstracts/variables.module' as variables;
 @use '../../../sass/abstracts/mixins.module' as mixins;
 
-.section {
+.container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-
-  @include mixins.media-mobile {
-    display: none;
-  }
 }
 
 .top-block-container {
@@ -37,3 +33,12 @@
   transform: translateY(1rem);
 }
 
+@include mixins.media-mobile {
+  .top-block-container {
+    display: none;
+  }
+
+  .image-title-container {
+    flex-direction: column;
+  }
+}

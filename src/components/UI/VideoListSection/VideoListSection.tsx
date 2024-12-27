@@ -12,7 +12,7 @@ interface Props {
 
 const VideoListSection = ({ sectionData }: Props) => {
   return (
-    <section className={styles.section}>
+    <div className={styles.container}>
       <div className={styles['top-block-container']}>
         <div className={styles['image-title-container']}>
           {sectionData.channelIcon && (
@@ -38,7 +38,7 @@ const VideoListSection = ({ sectionData }: Props) => {
       </div>
 
       <VideosList videos={sectionData.videos} />
-    </section>
+    </div>
   );
 };
 

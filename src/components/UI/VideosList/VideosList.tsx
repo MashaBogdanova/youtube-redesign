@@ -11,11 +11,16 @@ interface Props {
 }
 
 const VideosList = ({ videos, isVertical = false }: Props) => {
+  const screenWidth = window.innerWidth;
+
   return (
-    <ul
-      className={`${styles['list']} ${isVertical && styles['vertical-list']}`}
-    >
-      {videos.map((video) => {
+    <ul className={`${styles.list} ${isVertical && styles['vertical-list']}`}>
+      {videos.map((video, index) => {
+        // Render only 4 items for mobile devices
+        if (screenWidth === 320 && index > 3) {
+          return;
+        }
+
         return (
           <li aria-label={video.title} key={`${video.author}${video.title}`}>
             <Link to="#">

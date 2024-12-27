@@ -8,9 +8,15 @@ import RecommendedVideos from './RecommendedVideos/RecommendedVideos.tsx';
 const HomePage = () => {
   return (
     <main className={styles.home}>
-      <MostRelevantChannel />
-      <RecommendedVideos />
-      <RecommendedChannel />
+      <section>
+        <MostRelevantChannel />
+      </section>
+      <section className={styles.section}>
+        <RecommendedVideos />
+      </section>
+      <section className={styles.section}>
+        <RecommendedChannel />
+      </section>
     </main>
   );
 };

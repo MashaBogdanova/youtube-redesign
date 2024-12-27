@@ -1,10 +1,22 @@
 @use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module.scss' as mixins;
 
-.icon-container {
+.container {
   position: relative;
   display: block;
   width: max-content;
   margin-bottom: 0.7rem;
+}
+
+@include mixins.media-mobile {
+  .container {
+    margin-bottom: 0.4rem;
+  }
+
+  .cover {
+    width: 28.8rem;
+    height: 15rem;
+  }
 }
 
 .time {
