@@ -2,7 +2,7 @@ import React from 'react';
 
 import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { videoPlayerPage } from '../../../data/video-player-page.ts';
-import styles from './videi-info.module.scss';
+import styles from './video-info.module.scss';
 
 const VideoInfo = () => {
   return (
