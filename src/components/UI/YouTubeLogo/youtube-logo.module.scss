@@ -1,4 +1,13 @@
+@use '../../../sass/abstracts/mixins.module.scss' as mixins;
+
 .logo {
   margin-left: 3rem;
   transform: translateY(2.5px);
+}
+
+@include mixins.media-mobile {
+  .logo {
+    margin-left: unset;
+    transform: unset;
+  }
 }

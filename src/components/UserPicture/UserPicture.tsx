@@ -1,17 +1,19 @@
 import React from 'react';
 
 import userIcon from '../../assets/header-icons/user-icon.svg';
-import ButtonIcon from '../UI/ButtonIcon/ButtonIcon.tsx';
+import styles from './user-picture.module.scss';
 
 const UserPicture = () => {
   return (
-    <ButtonIcon
-      icon={userIcon}
-      label="Open user profile menu"
-      width="40"
-      height="40"
-      translateX="50"
-    />
+    <button className={styles.picture} aria-label="Open user profile menu">
+      <img
+        className={styles.icon}
+        src={userIcon}
+        alt=""
+        width={40}
+        height={40}
+      />
+    </button>
   );
 };
 

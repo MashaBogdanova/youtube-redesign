@@ -1,0 +1,7 @@
+@use '../../sass/abstracts/mixins.module' as mixins;
+
+@include mixins.media-mobile {
+  .container {
+    display: none;
+  }
+}

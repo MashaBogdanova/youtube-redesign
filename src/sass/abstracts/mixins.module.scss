@@ -1,5 +1,7 @@
 @use './variables.module' as variables;
 
+// Fonts
+
 @mixin title {
   font-size: 2.6rem;
   font-weight: bold;
@@ -9,4 +11,12 @@
 @mixin statistics {
   font-size: 1.3rem;
   color: variables.$color-text-s;
+}
+
+// Breakpoints
+
+@mixin media-mobile {
+  @media screen and (width: variables.$screen-width-mobile) {
+    @content;
+  }
 }

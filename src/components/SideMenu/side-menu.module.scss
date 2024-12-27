@@ -1,3 +1,6 @@
+@use '../../sass/abstracts/mixins.module.scss' as mixins;
+
+
 .side-menu {
   grid-area: side-menu;
 
@@ -6,4 +9,8 @@
   gap: 6rem;
   width: max-content;
   padding-top: 2rem;
+
+  @include mixins.media-mobile {
+    display: none;
+  }
 }

@@ -18,10 +18,13 @@ $color-hr: rgba(216, 216, 216, 0.5);
 $color-toggle: #2196f3;
 
 // Layout
-$screen-width: 1920px;
+$screen-width-desktop: 1920px;
+$screen-width-mobile: 320px;
 
-$body-top-padding: 2rem;
-$body-left-padding: 3rem;
+$body-top-padding-desktop: 2rem;
+$body-left-padding-desktop: 3rem;
+$body-top-padding-mobile: 1.2rem;
+$body-padding-x-mobile: 1.6rem;
 
 // Home page & Channel page layout
 $content-left-spacing: 22.5rem;

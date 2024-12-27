@@ -1,3 +1,5 @@
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
 .layout {
   display: grid;
   gap: 3rem 0;
@@ -5,5 +7,18 @@
     "header header"
     "side-menu main";
   grid-template-columns: 22.4rem auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 4.4rem auto;
+}
+
+@include mixins.media-mobile {
+  .layout {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+    "header"
+    "main"
+    "side-menu";
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr 6.1rem;
+  }
 }
