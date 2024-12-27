@@ -1,4 +1,5 @@
 @use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
 
 .list {
   display: flex;
@@ -11,15 +12,14 @@
 }
 
 .title {
-  font-weight: bold;
-  color: variables.$color-text-xl;
+  @include mixins.title();
 }
 
 .additional-information {
   display: flex;
   justify-content: space-between;
 
-  color: variables.$color-text-s;
+  @include mixins.statistics();
   white-space: nowrap;
 }
 

@@ -24,7 +24,7 @@ const VideosList = ({ videos, isVertical = false }: Props) => {
             <h4
               className={styles['title']}
               style={{
-                fontSize: isVertical ? '2.6rem' : '1.6rem',
+                ...(!isVertical && { fontSize: '1.6rem' }),
                 marginBottom: isVertical ? '1.1rem' : '0.4rem',
               }}
             >
@@ -33,7 +33,9 @@ const VideosList = ({ videos, isVertical = false }: Props) => {
 
             <div
               className={styles['additional-information']}
-              style={{ fontSize: isVertical ? '1.8rem' : '1.3rem' }}
+              style={{
+                ...(isVertical && { fontSize: '1.8rem' }),
+              }}
             >
               <div className={styles['views-date-container']}>
                 <span>{video.viewsCount} views</span>

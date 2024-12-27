@@ -7,7 +7,6 @@
   justify-content: space-between;
 
   margin-bottom: 2rem;
-  // todo: check why not 7?
   padding-right: 10rem;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .title {
-  @include mixins.title;
+  @include mixins.title();
 }
 
 .subscribe-block-container {
@@ -29,7 +28,7 @@
 }
 
 .subscribed {
-  @include mixins.statistics-text;
+  @include mixins.statistics();
 }
 
 

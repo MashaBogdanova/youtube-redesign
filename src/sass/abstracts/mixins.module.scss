@@ -1,12 +1,12 @@
 @use './variables.module' as variables;
 
-@mixin statistics-text {
-  font-size: 1.3rem;
-  color: variables.$color-text-s;
-}
-
 @mixin title {
   font-size: 2.6rem;
   font-weight: bold;
   color: variables.$color-text-xl;
+}
+
+@mixin statistics {
+  font-size: 1.3rem;
+  color: variables.$color-text-s;
 }
