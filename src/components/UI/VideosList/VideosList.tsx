@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 import { VideoData } from '../../../types/videoData.ts';
 import VideoCover from '../VideoCover/VideoCover.tsx';
@@ -23,18 +23,21 @@ const VideosList = ({ videos, isVertical = false }: Props) => {
 
         return (
           <li aria-label={video.title} key={`${video.author}${video.title}`}>
-            <Link to="#">
-              <VideoCover icon={video.cover} time={video.time} />
-            </Link>
-            <h4
-              className={styles['title']}
-              style={{
-                ...(!isVertical && { fontSize: '1.6rem' }),
-                marginBottom: isVertical ? '1.1rem' : '0.4rem',
-              }}
+            <NavLink
+              to="#"
+              className={({ isActive }) => (isActive ? styles.active : '')}
             >
-              <Link to="#">{video.title}</Link>
-            </h4>
+              <VideoCover icon={video.cover} time={video.time} />
+              <h4
+                className={styles.title}
+                style={{
+                  ...(!isVertical && { fontSize: '1.6rem' }),
+                  marginBottom: isVertical ? '1.1rem' : '0.4rem',
+                }}
+              >
+                {video.title}
+              </h4>
+            </NavLink>
 
             <div
               className={styles['additional-information']}

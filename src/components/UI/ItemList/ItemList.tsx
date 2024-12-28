@@ -2,6 +2,7 @@ import React from 'react';
 
 import { ListItem } from '../../../types/list-item.ts';
 import styles from './item-list.module.scss';
+import { NavLink } from 'react-router';
 
 interface Props {
   items: ListItem[];
@@ -18,8 +19,15 @@ const ItemList = ({ items, itemsGap = '2.9rem' }: Props) => {
             aria-label={item.itemName}
             key={item.itemName}
           >
-            <img src={item.icon} alt="" />
-            <p>{item.itemName}</p>
+            <NavLink
+              to={item.URIParam}
+              className={({ isActive }) =>
+                isActive ? `${styles.item} ${styles.active}` : styles.item
+              }
+            >
+              <img src={item.icon} alt="" />
+              <p>{item.itemName}</p>
+            </NavLink>
           </li>
         );
       })}

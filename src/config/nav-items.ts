@@ -12,32 +12,37 @@ import games from '../assets/nav-icons/games.svg';
 import arrow from '../assets/nav-icons/expand-menu-arrow.svg';
 
 export const baseItems: ListItem[] = [
-  { icon: home, itemName: 'Home' },
-  { icon: trending, itemName: 'Trending' },
-  { icon: subscriptions, itemName: 'Subscriptions' },
+  { icon: home, itemName: 'Home', URIParam: '/' },
+  { icon: trending, itemName: 'Trending', URIParam: 'trending' },
+  { icon: subscriptions, itemName: 'Subscriptions', URIParam: 'subscriptions' },
 ];
 export const additionalItems: ListItem[] = [
-  { icon: library, itemName: 'Library' },
-  { icon: history, itemName: 'History' },
-  { icon: watch, itemName: 'Watch later' },
+  { icon: library, itemName: 'Library', URIParam: 'library' },
+  { icon: history, itemName: 'History', URIParam: 'history' },
+  { icon: watch, itemName: 'Watch later', URIParam: 'later' },
   {
     icon: favourites,
     itemName: 'Favourites',
+    URIParam: 'favourites',
   },
   {
     icon: liked,
     itemName: 'Liked videos',
+    URIParam: 'liked',
   },
   {
     icon: music,
     itemName: 'Music',
+    URIParam: 'music',
   },
   {
     icon: games,
     itemName: 'Games',
+    URIParam: 'games',
   },
   {
     icon: arrow,
     itemName: 'Show more',
+    URIParam: 'more',
   },
 ];

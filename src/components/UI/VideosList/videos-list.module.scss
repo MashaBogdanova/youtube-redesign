@@ -20,6 +20,10 @@
   @include mixins.title();
 }
 
+.active {
+  color: variables.$color-accent;
+}
+
 .additional-information {
   display: flex;
   justify-content: space-between;
