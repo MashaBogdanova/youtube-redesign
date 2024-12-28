@@ -5,6 +5,12 @@ import ItemList from '../UI/ItemList/ItemList.tsx';
 import styles from './menu-items-list.module.scss';
 
 const MenuItemsList = () => {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth === 320) {
+    return <ItemList items={[...baseItems, additionalItems[0]]} />;
+  }
+
   return (
     <section className={styles.menu}>
       <ItemList items={baseItems} />

@@ -1,8 +1,14 @@
+@use '../../sass/abstracts/mixins.module.scss' as mixins;
+
 .subscriptions {
   display: flex;
   flex-direction: column;
   gap: 3.3rem;
   height: 36.8rem;
+
+  @include mixins.media-mobile {
+    display: none;
+  }
 }
 
 .title {

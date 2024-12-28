@@ -8,6 +8,7 @@ import styles from './side-menu.module.scss';
 const SideMenu = () => {
   return (
     <nav className={styles['side-menu']}>
+      <hr className={styles.divider} />
       <MenuItemsList />
       <Subscriptions />
       <Settings />
