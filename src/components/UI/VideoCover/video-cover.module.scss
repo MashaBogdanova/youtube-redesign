@@ -16,6 +16,9 @@
   .cover {
     width: 28.8rem;
     height: 15rem;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 1.4rem;
   }
 }
 
