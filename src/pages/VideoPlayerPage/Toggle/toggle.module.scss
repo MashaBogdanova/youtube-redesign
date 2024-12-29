@@ -1,4 +1,5 @@
 @use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
 
 .container {
   display: flex;
@@ -43,4 +44,23 @@
 
 .toggle:checked + .slider:before {
   transform: translateX(-1.6rem);
+}
+
+@include mixins.media-mobile {
+  .label {
+    font-size: 1rem;
+    letter-spacing: 0.63px;
+  }
+
+  .slider {
+    width: 3rem;
+    height: 1.9rem;
+  }
+
+  .slider:before {
+    top: 0.132rem;
+    right: 0.136rem;
+    width: 1.636rem;
+    height: 1.636rem;
+  }
 }

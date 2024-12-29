@@ -1,8 +1,9 @@
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  display: none;
 }
 
 .title-toggle-container {
@@ -14,4 +15,14 @@
 .title {
   font-size: 3.6rem;
   font-weight: bold;
+}
+
+@include mixins.media-mobile {
+  .container {
+    gap: 1.3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
 }
