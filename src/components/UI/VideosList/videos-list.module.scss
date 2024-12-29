@@ -4,11 +4,6 @@
 .list {
   display: flex;
   gap: 4rem;
-
-  @include mixins.media-mobile {
-    flex-direction: column;
-    gap: 3.1rem;
-  }
 }
 
 .vertical-list {
@@ -35,4 +30,20 @@
 .views-date-container {
   display: flex;
   gap: 0.8rem;
+}
+
+@include mixins.media-mobile {
+  .list {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .views-date-container,
+  .additional-information a {
+    font-size: 1.3rem;
+  }
 }
