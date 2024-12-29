@@ -1,4 +1,6 @@
 @use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
 
 .button {
   width: 15.4rem;
@@ -9,4 +11,11 @@
 
   background-color: variables.$color-accent;
   border-radius: 2rem;
+
+  @include mixins.media-mobile {
+    width: 12rem;
+    height: 3.4rem;
+
+    font-size: 1.2rem;
+  }
 }

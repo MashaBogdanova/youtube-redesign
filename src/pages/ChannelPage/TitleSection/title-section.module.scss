@@ -1,7 +1,7 @@
 @use '../../../sass/abstracts/variables.module' as variables;
 @use '../../../sass/abstracts/mixins.module' as mixins;
 
-.title-section {
+.section {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,4 +31,32 @@
   @include mixins.statistics();
 }
 
+@include mixins.media-mobile {
+  .section {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
 
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  .channel-icon {
+    position: absolute;
+    top: -6.5rem;
+    left: 0;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .icon-title-container{
+    position: relative;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .title {
+    margin: 0.7rem 0 0.4rem;
+    font-size: 2rem;
+  }
+}

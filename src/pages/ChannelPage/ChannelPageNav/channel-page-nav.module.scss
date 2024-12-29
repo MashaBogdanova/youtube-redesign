@@ -1,10 +1,17 @@
 @use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
 
 .nav {
+  margin-bottom: 6rem;
+  display: flex;
+  gap: 4rem
+}
+
+.nav-items-list {
   display: flex;
   align-items: center;
   gap: 7rem;
-  margin-bottom: 6rem;
 
   font-size: 1.8rem;
 }
@@ -14,4 +21,20 @@
   text-decoration: underline;
   text-underline-offset: 8px;
   color: variables.$color-accent
+}
+
+.more-options-button {
+  display: none;
+}
+
+@include mixins.media-mobile {
+  .more-options-button {
+    display: block;
+  }
+  .nav-items-list {
+    gap: 4rem;
+    justify-content: space-between;
+
+    font-size: 1.4rem;
+  }
 }

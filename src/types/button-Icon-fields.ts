@@ -7,4 +7,5 @@ export interface ButtonIconFields {
   translateY?: number;
   rotate?: number;
   scale?: number;
+  isShownOnMobile?: boolean;
 }

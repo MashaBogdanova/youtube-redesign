@@ -12,10 +12,11 @@ const ButtonIcon = ({
   translateY = 0,
   rotate = 0,
   scale = 1,
+  isShownOnMobile = true,
 }: ButtonIconFields) => {
   return (
     <button
-      className={styles.button}
+      className={isShownOnMobile ? styles.button : styles.hidden}
       aria-label={label}
       style={{
         transform: `

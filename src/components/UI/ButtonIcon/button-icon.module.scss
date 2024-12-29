@@ -1,5 +1,13 @@
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hidden {
+  @include mixins.media-mobile {
+    display: none;
+  }
 }

@@ -10,8 +10,10 @@
   margin-bottom: 2.6rem;
   padding-right: variables.$channel-page-right-spacing;
   width: 100%;
+}
 
-  @include mixins.media-mobile {
+@include mixins.media-mobile {
+  .banner-section {
     position: relative;
     top: 0;
     right: variables.$body-padding-x-mobile;

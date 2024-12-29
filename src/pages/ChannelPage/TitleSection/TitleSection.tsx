@@ -9,9 +9,9 @@ import styles from './title-section.module.scss';
 
 const TitleSection = () => {
   return (
-    <section className={styles['title-section']}>
+    <section className={styles.section}>
       <div className={styles['icon-title-container']}>
-        <img src={channelIcon} alt="" />
+        <img className={styles['channel-icon']} src={channelIcon} alt="" />
         <div>
           <h1 className={styles.title}>{channelPage.channelTitle}</h1>
           <p className={styles.subscribed}>
@@ -26,6 +26,7 @@ const TitleSection = () => {
           label="Subscribe"
           width="22"
           height="26"
+          isShownOnMobile={false}
         />
         <SubscribeButton />
       </div>
