@@ -11,8 +11,14 @@ import TitleSection from './TitleSection/TitleSection.tsx';
 const ChannelPage = () => {
   return (
     <main className={styles['channel-page']}>
-      <section className={styles.banner}>
-        <img src={channelPage.channelBanner} alt="" width="1595" height="280" />
+      <section className={styles['banner-section']}>
+        <picture>
+          <source
+            srcSet={channelPage.channelBanner.mobile}
+            media="(max-width: 320px)"
+          />
+          <img src={channelPage.channelBanner.base} alt="" />
+        </picture>
       </section>
       <TitleSection />
       <ChannelPageNav />
