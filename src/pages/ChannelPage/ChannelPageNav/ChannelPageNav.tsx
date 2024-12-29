@@ -4,8 +4,8 @@ import { NavLink } from 'react-router';
 import arrowDownIcon from '../../../assets/ui-icons/down-arrow.svg';
 import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { channelPageNavItems } from '../../../config/channel-page-nav-items.ts';
-import styles from './channel-page-nav.module.scss';
 import { SCREEN_WIDTH_MOBILE } from '../../../consts/consts.ts';
+import styles from './channel-page-nav.module.scss';
 
 const ChannelPageNav = () => {
   const screenWidth = window.innerWidth;

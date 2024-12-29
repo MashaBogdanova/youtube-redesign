@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router';
 
 import moreIcon from '../../assets/ui-icons/more-icon.svg';
+import { SCREEN_WIDTH_MOBILE } from '../../consts/consts.ts';
 import BurgerIcon from '../BurgerIcon/BurgerIcon.tsx';
 import HeaderIcons from '../HeaderIcons/HeaderIcons.tsx';
 import SearchInput from '../SearchInput/SearchInput.tsx';
@@ -9,7 +10,6 @@ import ButtonIcon from '../UI/ButtonIcon/ButtonIcon.tsx';
 import YouTubeLogo from '../UI/YouTubeLogo/YouTubeLogo.tsx';
 import UserPicture from '../UserPicture/UserPicture.tsx';
 import styles from './header.module.scss';
-import { SCREEN_WIDTH_MOBILE } from '../../consts/consts.ts';
 
 const Header = () => {
   const pagePathname = useLocation().pathname;

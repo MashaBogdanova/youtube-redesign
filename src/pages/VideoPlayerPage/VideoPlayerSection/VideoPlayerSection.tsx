@@ -1,11 +1,11 @@
 import React from 'react';
 
 import SubscribeButton from '../../../components/UI/SubscribeButton/SubscribeButton.tsx';
+import { SCREEN_WIDTH_MOBILE } from '../../../consts/consts.ts';
 import Player from '../Player/Player.tsx';
 import VideoInfo from '../VideoInfo/VideoInfo.tsx';
 import VideoStatistics from '../VideoStatistics/VideoStatistics.tsx';
 import styles from './video-player-section.module.scss';
-import { SCREEN_WIDTH_MOBILE } from '../../../consts/consts.ts';
 
 const VideoPlayerSection = () => {
   const screenWidth = window.innerWidth;

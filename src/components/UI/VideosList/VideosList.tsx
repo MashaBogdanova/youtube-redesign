@@ -13,9 +13,9 @@ interface Props {
 const VideosList = ({ videos, isVertical = false }: Props) => {
   return (
     <ul className={`${styles.list} ${isVertical && styles['vertical-list']}`}>
-      {videos.map((video) => {
+      {videos.map((video, index) => {
         return (
-          <li aria-label={video.title} key={`${video.author}${video.title}`}>
+          <li aria-label={video.title} key={`${video.title}${index}`}>
             <NavLink
               to="#"
               className={({ isActive }) => (isActive ? styles.active : '')}

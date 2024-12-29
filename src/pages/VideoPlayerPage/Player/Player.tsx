@@ -8,13 +8,13 @@ import screenWidthIcon from '../../../assets/video-player-page/video-player/size
 import soundIcon from '../../../assets/video-player-page/video-player/sound-icon.svg';
 import subtitlesIcon from '../../../assets/video-player-page/video-player/subtitles-icon.svg';
 import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
-import { videoPlayerPage } from '../../../data/video-player-page.ts';
-import ProgressBar from '../ProgressBar/ProgressBar.tsx';
-import styles from './player.module.scss';
 import {
   SCREEN_WIDTH_DESKTOP,
   SCREEN_WIDTH_MOBILE,
 } from '../../../consts/consts.ts';
+import { videoPlayerPage } from '../../../data/video-player-page.ts';
+import ProgressBar from '../ProgressBar/ProgressBar.tsx';
+import styles from './player.module.scss';
 
 const Player = () => {
   const screenWidth = window.innerWidth;

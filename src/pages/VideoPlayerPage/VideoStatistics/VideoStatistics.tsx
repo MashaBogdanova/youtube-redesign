@@ -21,6 +21,7 @@ const VideoStatistics = () => {
               <StatisticsButton
                 icon={item.icon}
                 label={item.label}
+                key={item.label}
                 title={
                   item.data === 'Share' ? 'Share' : videoPlayerPage[item.data]
                 }

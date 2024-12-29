@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router';
 
 import logo from '../../../assets/header-icons/youtube-icon.svg';
 import logoSecondary from '../../../assets/header-icons/youtube-icon-2.svg';
-import styles from './youtube-logo.module.scss';
 import { SCREEN_WIDTH_MOBILE } from '../../../consts/consts.ts';
+import styles from './youtube-logo.module.scss';
 
 const YouTubeLogo = () => {
   const pagePath = useLocation().pathname;

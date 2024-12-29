@@ -2,10 +2,10 @@ import { Route, Routes } from 'react-router';
 
 import MainLayout from './components/layouts/MainLayout/MainLayout.tsx';
 import VideoPlayerPageLayout from './components/layouts/VideoPlayerPageLayout/VideoPlayerPageLayout.tsx';
+import { SCREEN_WIDTH_MOBILE } from './consts/consts.ts';
 import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
 import HomePage from './pages/HomePage/HomePage.tsx';
 import VideoPlayerPage from './pages/VideoPlayerPage/VideoPlayerPage.tsx';
-import { SCREEN_WIDTH_MOBILE } from './consts/consts.ts';
 
 function App() {
   const screenWidth = window.innerWidth;
