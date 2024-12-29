@@ -13,7 +13,6 @@ import styles from './header.module.scss';
 const Header = () => {
   const pagePathname = useLocation().pathname;
   const screenWidth = window.innerWidth;
-  console.log(pagePathname);
 
   return (
     <header className={styles.header}>

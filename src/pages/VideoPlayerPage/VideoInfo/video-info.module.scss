@@ -25,6 +25,10 @@
   @include mixins.statistics();
 }
 
+.subscribed {
+  display: none;
+}
+
 .description {
   line-height: 2.2rem;
 }
@@ -32,4 +36,43 @@
 .show-more-button {
   font-size: 2rem;
   color: variables.$color-text-s;
+}
+
+@include mixins.media-mobile {
+  .container {
+    align-items: center;
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  .title-published-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .channel-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .title {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+
+  .published,
+  .description {
+    display: none;
+  }
+
+  .subscribed {
+    display: block;
+    font-size: 1.2rem;
+    color: variables.$color-text-s;
+  }
+
+  .show-more-button {
+    display: none;
+  }
 }

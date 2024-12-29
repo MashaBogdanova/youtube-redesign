@@ -1,23 +1,29 @@
 import React from 'react';
 
-import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { videoPlayerPage } from '../../../data/video-player-page.ts';
 import styles from './video-info.module.scss';
 
 const VideoInfo = () => {
   return (
     <article className={styles.container}>
-      <ButtonIcon
-        icon={videoPlayerPage.channelIcon}
-        label={'Channel Icon'}
-        width="80"
-        height="80"
-      />
+      <button aria-label="Channel Icon">
+        <img
+          className={styles['channel-icon']}
+          src={videoPlayerPage.channelIcon}
+          alt=""
+          width={80}
+          height={80}
+        />
+      </button>
+
       <div className={styles.information}>
-        <div>
+        <div className={styles['title-published-container']}>
           <h2 className={styles.title}>{videoPlayerPage.author}</h2>
           <div className={styles.published}>
             Published on {videoPlayerPage.whenAdded}
+          </div>
+          <div className={styles.subscribed}>
+            {videoPlayerPage.subscribed} subscribed
           </div>
         </div>
 

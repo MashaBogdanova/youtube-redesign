@@ -7,6 +7,7 @@ import VideoStatistics from '../VideoStatistics/VideoStatistics.tsx';
 import styles from './video-player-section.module.scss';
 
 const VideoPlayerSection = () => {
+  const screenWidth = window.innerWidth;
   return (
     <section>
       <Player />
@@ -14,8 +15,15 @@ const VideoPlayerSection = () => {
       <hr />
       <div className={styles['description-subscribe-container']}>
         <VideoInfo />
-        <SubscribeButton />
+        {screenWidth === 320 ? (
+          <button className={styles['subscribe-button']} aria-label="Subscribe">
+            Subscribe
+          </button>
+        ) : (
+          <SubscribeButton />
+        )}
       </div>
+      <hr className={styles['divider-mobile']} />
     </section>
   );
 };

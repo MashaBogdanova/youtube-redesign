@@ -1,6 +1,29 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
 .description-subscribe-container {
-  //display: flex;
+  display: flex;
   justify-content: space-between;
   margin-top: 3.8rem;
+}
+
+.divider-mobile {
   display: none;
+}
+
+@include mixins.media-mobile {
+  .description-subscribe-container {
+    align-items: center;
+    margin: 2rem 0 1.6rem;
+  }
+
+  .subscribe-button {
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+    color: variables.$color-accent;
+  }
+
+  .divider-mobile {
+    display: block;
+  }
 }

@@ -11,6 +11,7 @@ interface VideoPlayer extends VideoData {
   currentTime: string;
   channelIcon: string;
   remainingTime: string;
+  subscribed: string;
 }
 
 export const videoPlayerPage: VideoPlayer = {
@@ -24,6 +25,7 @@ export const videoPlayerPage: VideoPlayer = {
   likesCount: '123k',
   dislikesCount: '435k',
   whenAdded: '14 Jun 2019',
+  subscribed: '245k',
   cover: { base: videoCover, mobile: videoCoverMobile },
   description:
     'A successful marketing plan relies heavily on the pulling-power of ' +
