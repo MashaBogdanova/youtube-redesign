@@ -1,4 +1,5 @@
 import channelBanner from '../assets/channel-page/banner.png';
+import channelBannerMobile from '../assets/channel-page/banner-mobile.png';
 import channelIcon from '../assets/channel-page/channel-icon.png';
 import mainVideoCover from '../assets/channel-page/main-video-cover.png';
 import recommendedChannel1 from '../assets/channel-page/recommended-channel-icon-1.svg';
@@ -19,7 +20,7 @@ import { ListItem } from '../types/list-item.ts';
 import { VideoData } from '../types/videoData.ts';
 
 export interface ChannelPage {
-  channelBanner: string;
+  channelBanner: { base: string; mobile?: string };
   channelTitle: string;
   channelIcon: string;
   subscribersCount: string;
@@ -83,7 +84,7 @@ const channelVideos: VideoData[] = [
 ];
 
 export const channelPage: ChannelPage = {
-  channelBanner: channelBanner,
+  channelBanner: { base: channelBanner, mobile: channelBannerMobile },
   channelTitle: 'Margaret Phelps',
   channelIcon: channelIcon,
   subscribersCount: '245K',
@@ -109,7 +110,7 @@ export const channelPage: ChannelPage = {
     time: '7:36',
     viewsCount: '11k',
     whenAdded: '6 months',
-    cover: mainVideoCover,
+    cover: { base: mainVideoCover },
   },
   channelVideos: channelVideos,
 };
