@@ -20,6 +20,7 @@ const ChannelPage = () => {
           <img src={channelPage.channelBanner.base} alt="" />
         </picture>
       </section>
+
       <TitleSection />
       <ChannelPageNav />
       <MainChannelVideo />

@@ -3,7 +3,7 @@
 
 .channel-page {
   position: relative;
-  width: 100%;
+  width: calc(320px - 1.6rem*2);
 }
 
 .banner-section {
@@ -17,5 +17,6 @@
     position: relative;
     top: 0;
     right: variables.$body-padding-x-mobile;
+    padding-right: 0;
   }
 }

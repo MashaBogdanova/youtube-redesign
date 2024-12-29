@@ -9,27 +9,27 @@ export interface ChannelPageNavItem {
 export const channelPageNavItems: Partial<ChannelPageNavItem>[] = [
   {
     title: 'Home',
-    link: '/',
+    link: '/channel',
   },
   {
     title: 'Videos',
-    link: 'videos',
+    link: '/videos',
   },
   {
     title: 'Playlists',
-    link: 'playlists',
+    link: '/playlists',
   },
   {
     title: 'Channels',
-    link: 'channels',
+    link: '/channels',
   },
   {
     title: 'Discussion',
-    link: 'discussion',
+    link: '/discussion',
   },
   {
     title: 'About',
-    link: 'about',
+    link: '/about',
   },
   {
     isSearchButton: true,

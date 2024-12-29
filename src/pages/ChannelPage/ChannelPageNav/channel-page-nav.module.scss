@@ -28,13 +28,17 @@
 }
 
 @include mixins.media-mobile {
-  .more-options-button {
-    display: block;
+  .nav {
+    margin-bottom: 2rem;
+    width: 27.2rem;
   }
+
   .nav-items-list {
     gap: 4rem;
-    justify-content: space-between;
-
     font-size: 1.4rem;
+  }
+
+  .more-options-button {
+    display: block;
   }
 }
