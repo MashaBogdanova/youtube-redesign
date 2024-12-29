@@ -13,7 +13,7 @@ export const recommendedVideos: VideosListSection = {
       time: '3:40',
       viewsCount: '34k',
       whenAdded: '5 months',
-      cover: video1,
+      cover: { base: video1 },
     },
     {
       title: 'Moon Gazing',
@@ -21,7 +21,7 @@ export const recommendedVideos: VideosListSection = {
       time: '2:12',
       viewsCount: '54k',
       whenAdded: '11 months',
-      cover: video2,
+      cover: { base: video2 },
     },
     {
       title: 'Moon Gazing',
@@ -29,7 +29,7 @@ export const recommendedVideos: VideosListSection = {
       time: '2:12',
       viewsCount: '125k',
       whenAdded: '4 months',
-      cover: video3,
+      cover: { base: video3 },
     },
   ],
 };

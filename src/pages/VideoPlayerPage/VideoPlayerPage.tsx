@@ -6,7 +6,7 @@ import VideoPlayerSection from './VideoPlayerSection/VideoPlayerSection.tsx';
 
 const VideoPlayerPage = () => {
   return (
-    <main className={styles['video-player-page']}>
+    <main className={styles.container}>
       <VideoPlayerSection />
       <NextVideosSection />
     </main>

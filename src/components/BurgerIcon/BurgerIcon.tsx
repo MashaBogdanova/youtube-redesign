@@ -10,8 +10,8 @@ const BurgerIcon = () => {
       <ButtonIcon
         icon={burgerIcon}
         label="Open menu"
-        translateX="2"
-        translateY="0.5"
+        translateX={2}
+        translateY={0.5}
       />
     </div>
   );

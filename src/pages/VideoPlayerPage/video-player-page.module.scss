@@ -1,5 +1,13 @@
-.video-player-page {
+@use '../../sass/abstracts/mixins.module.scss' as mixins;
+
+.container {
   display: flex;
   gap: 4rem;
   padding: 0 7rem 4.8rem 5rem;
+
+  @include mixins.media-mobile {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
 }

@@ -13,6 +13,27 @@
   color: variables.$color-text-s;
 }
 
+// Progress Bar
+
+@mixin progress-bar($height) {
+  position: relative;
+  width: 100%;
+  height: $height;
+
+  background-color: variables.$color-background-s-transparent;
+  border-radius: variables.$progress-bar-border-radius;
+}
+
+@mixin current-progress($width, $color) {
+  position: absolute;
+  left: 0;
+  width: $width;
+  height: 100%;
+
+  background-color: $color;
+  border-radius: variables.$progress-bar-border-radius;
+}
+
 // Breakpoints
 
 @mixin media-mobile {

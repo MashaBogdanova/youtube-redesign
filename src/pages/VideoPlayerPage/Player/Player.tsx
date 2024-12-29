@@ -8,14 +8,29 @@ import screenWidthIcon from '../../../assets/video-player-page/video-player/size
 import soundIcon from '../../../assets/video-player-page/video-player/sound-icon.svg';
 import subtitlesIcon from '../../../assets/video-player-page/video-player/subtitles-icon.svg';
 import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
-import ProgressBar from '../../../components/UI/ProgressBar/ProgressBar.tsx';
 import { videoPlayerPage } from '../../../data/video-player-page.ts';
+import ProgressBar from '../ProgressBar/ProgressBar.tsx';
 import styles from './player.module.scss';
 
 const Player = () => {
+  const screenWidth = window.innerWidth;
   return (
     <article className={styles.container}>
-      <img src={videoPlayerPage.cover} alt="" />
+      <img
+        className={styles.cover}
+        src={videoPlayerPage.cover.base}
+        width={1363}
+        height={700}
+        srcSet={`
+        ${videoPlayerPage.cover.mobile} 320w,
+        ${videoPlayerPage.cover.base} 1920w,
+      `}
+        sizes="
+          (max-width: 320px) 100vw,
+          192rem
+        "
+        alt=""
+      />
 
       <div className={styles['player-buttons']}>
         <div className={styles.time}>
@@ -23,26 +38,47 @@ const Player = () => {
           <p>{videoPlayerPage.time}</p>
         </div>
 
-        <ProgressBar height={10} progress={280} accent />
+        {screenWidth !== 320 && <ProgressBar />}
 
         <div className={styles['buttons-container']}>
           <div className={styles['left-buttons-container']}>
-            <ButtonIcon icon={pauseIcon} label="Pause" width="22" height="24" />
-            <ButtonIcon
-              icon={nextIcon}
-              label="Next video"
-              width="27"
-              height="18"
-            />
+            <button className={styles['pause-button']} aria-label="Pause">
+              <img
+                className={styles['pause-button-icon']}
+                src={pauseIcon}
+                alt=""
+                width={22}
+                height={24}
+              />
+            </button>
+
+            <button className={styles['next-button']} aria-label="Next video">
+              <img src={nextIcon} alt="" width={27} height={18} />
+            </button>
+
+            <div className={styles['time-progress-container']}>
+              <p>{videoPlayerPage.currentTime}</p>
+              <ProgressBar />
+              <p>{videoPlayerPage.remainingTime}</p>
+            </div>
 
             <div className={styles['volume-container']}>
-              <ButtonIcon
-                icon={soundIcon}
-                label="Mute / Unmute"
-                width="24"
-                height="24"
-              />
-              <ProgressBar height={8} progress={36} />
+              <button
+                className={styles['volume-button']}
+                aria-label="Mute / Unmute"
+              >
+                <img
+                  className={styles['volume-button-icon']}
+                  src={soundIcon}
+                  alt=""
+                  width={24}
+                  height={24}
+                />
+              </button>
+
+              <div className={styles['volume-bar']}>
+                <div className={styles['current-volume']} />
+              </div>
             </div>
           </div>
 

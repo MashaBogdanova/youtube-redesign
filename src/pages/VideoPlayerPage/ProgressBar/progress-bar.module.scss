@@ -1,0 +1,21 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
+.progress-bar {
+  @include mixins.progress-bar(1rem);
+}
+
+.current-progress {
+  @include mixins.current-progress(28rem, variables.$color-accent);
+}
+
+
+@include mixins.media-mobile {
+  .progress-bar {
+    @include mixins.progress-bar(0.5rem);
+  }
+
+  .current-progress {
+    @include mixins.current-progress(5.9rem, variables.$color-accent);
+  }
+}

@@ -7,6 +7,9 @@ export interface VideoData {
   likesCount?: string;
   dislikesCount?: string;
   whenAdded?: string;
-  cover: string;
+  cover: {
+    base: string;
+    mobile?: string;
+  };
   description?: string;
 }

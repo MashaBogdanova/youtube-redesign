@@ -1,6 +1,6 @@
 import React from 'react';
 
-import moreIcon from '../../../assets/video-player-page/more-icon.svg';
+import moreIcon from '../../../assets/ui-icons/more-icon.svg';
 import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import StatisticsButton from '../../../components/UI/StatisticsButton/StatisticsButton.tsx';
 import { videoPlayerStatistics } from '../../../config/video-player-statistics.ts';
@@ -14,7 +14,6 @@ const VideoStatistics = () => {
         <h1 className={styles.title}>{videoPlayerPage.title}</h1>
         <div className={styles.views}>{videoPlayerPage.viewsCount} views</div>
       </div>
-
       <div className={styles['buttons-container']}>
         <div className={styles['statistics-buttons-container']}>
           {videoPlayerStatistics.map((item) => {

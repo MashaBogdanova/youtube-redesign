@@ -3,6 +3,8 @@ export interface ButtonIconFields {
   label: string;
   width?: string;
   height?: string;
-  translateX?: string;
-  translateY?: string;
+  translateX?: number;
+  translateY?: number;
+  rotate?: number;
+  scale?: number;
 }

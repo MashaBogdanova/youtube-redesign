@@ -16,6 +16,7 @@ $color-accent: #ff0000;
 
 $color-hr: rgba(216, 216, 216, 0.5);
 $color-toggle: #2196f3;
+$color-progress-bar: rgba(61, 61, 61, 0.6);
 
 // Layout
 $screen-width-desktop: 1920px;
@@ -33,4 +34,7 @@ $pagination-right-spacing: 18rem;
 
 // Player
 $player-spacing: 3.3rem;
+$player-horizontal-spacing-mobile: 0.6rem;
+$player-bottom-spacing-mobile: 1.2rem;
+
 $progress-bar-border-radius: 0.5rem;

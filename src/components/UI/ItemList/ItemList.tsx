@@ -1,8 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 
 import { ListItem } from '../../../types/list-item.ts';
 import styles from './item-list.module.scss';
-import { NavLink } from 'react-router';
 
 interface Props {
   items: ListItem[];

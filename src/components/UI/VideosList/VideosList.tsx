@@ -27,7 +27,7 @@ const VideosList = ({ videos, isVertical = false }: Props) => {
               to="#"
               className={({ isActive }) => (isActive ? styles.active : '')}
             >
-              <VideoCover icon={video.cover} time={video.time} />
+              <VideoCover icon={video.cover.base} time={video.time} />
               <h4
                 className={styles.title}
                 style={{

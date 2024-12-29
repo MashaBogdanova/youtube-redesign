@@ -10,12 +10,19 @@ const ButtonIcon = ({
   height,
   translateX = 0,
   translateY = 0,
+  rotate = 0,
+  scale = 1,
 }: ButtonIconFields) => {
   return (
     <button
       className={styles.button}
       aria-label={label}
-      style={{ transform: `translate(${translateX}px, ${translateY}px)` }}
+      style={{
+        transform: `
+        translate(${translateX}px, ${translateY}px) 
+        rotate(${rotate}deg) 
+        scale(${scale})`,
+      }}
     >
       <img src={icon} alt="" width={width} height={height} />
     </button>
