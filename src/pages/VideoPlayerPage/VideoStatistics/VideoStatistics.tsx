@@ -9,7 +9,7 @@ import styles from './video-statistics.module.scss';
 
 const VideoStatistics = () => {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div>
         <h1 className={styles.title}>{videoPlayerPage.title}</h1>
         <div className={styles.views}>{videoPlayerPage.viewsCount} views</div>
@@ -37,7 +37,7 @@ const VideoStatistics = () => {
           height="6"
         />
       </div>
-    </div>
+    </article>
   );
 };
 

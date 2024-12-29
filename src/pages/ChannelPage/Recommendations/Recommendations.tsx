@@ -5,7 +5,7 @@ import styles from './recommendations.module.scss';
 
 const Recommendations = () => {
   return (
-    <article className={styles.recommendations}>
+    <section className={styles.recommendations}>
       <h3 className={styles.title}>Recommended channel</h3>
       {recommendations.map((item) => {
         return (
@@ -19,7 +19,7 @@ const Recommendations = () => {
           </li>
         );
       })}
-    </article>
+    </section>
   );
 };
 

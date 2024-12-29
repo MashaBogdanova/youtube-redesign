@@ -1,8 +1,8 @@
 export interface ButtonIconFields {
   icon: string;
   label: string;
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
   translateX?: number;
   translateY?: number;
   rotate?: number;
