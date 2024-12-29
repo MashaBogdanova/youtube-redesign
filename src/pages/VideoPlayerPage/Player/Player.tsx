@@ -52,9 +52,11 @@ const Player = () => {
               />
             </button>
 
-            <button className={styles['next-button']} aria-label="Next video">
-              <img src={nextIcon} alt="" width={27} height={18} />
-            </button>
+            <ButtonIcon
+              icon={nextIcon}
+              label="Next video"
+              isShownOnMobile={false}
+            />
 
             <div className={styles['time-progress-container']}>
               <p>{videoPlayerPage.currentTime}</p>

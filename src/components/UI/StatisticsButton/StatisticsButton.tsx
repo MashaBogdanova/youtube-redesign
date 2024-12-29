@@ -6,7 +6,7 @@ const StatisticsButton = ({ icon, title, label }) => {
   return (
     <button className={styles.button} aria-label={label}>
       <img src={icon} alt="" />
-      <div>{title}</div>
+      {title}
     </button>
   );
 };
