@@ -5,9 +5,19 @@
   transform: translateY(2.5px);
 }
 
+.logo-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
 @include mixins.media-mobile {
   .logo {
     margin-left: unset;
-    transform: unset;
+    transform: translateY(-2.5px);
   }
 }
