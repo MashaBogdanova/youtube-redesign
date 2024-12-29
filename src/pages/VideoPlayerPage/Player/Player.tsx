@@ -11,6 +11,10 @@ import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { videoPlayerPage } from '../../../data/video-player-page.ts';
 import ProgressBar from '../ProgressBar/ProgressBar.tsx';
 import styles from './player.module.scss';
+import {
+  SCREEN_WIDTH_DESKTOP,
+  SCREEN_WIDTH_MOBILE,
+} from '../../../consts/consts.ts';
 
 const Player = () => {
   const screenWidth = window.innerWidth;
@@ -22,8 +26,8 @@ const Player = () => {
         width={1363}
         height={700}
         srcSet={`
-        ${videoPlayerPage.cover.mobile} 320w,
-        ${videoPlayerPage.cover.base} 1920w,
+        ${videoPlayerPage.cover.mobile} ${SCREEN_WIDTH_MOBILE}w,
+        ${videoPlayerPage.cover.base} ${SCREEN_WIDTH_DESKTOP}w,
       `}
         sizes="
           (max-width: 320px) 100vw,
@@ -38,7 +42,7 @@ const Player = () => {
           <p>{videoPlayerPage.time}</p>
         </div>
 
-        {screenWidth !== 320 && <ProgressBar />}
+        {screenWidth !== SCREEN_WIDTH_MOBILE && <ProgressBar />}
 
         <div className={styles['buttons-container']}>
           <div className={styles['left-buttons-container']}>

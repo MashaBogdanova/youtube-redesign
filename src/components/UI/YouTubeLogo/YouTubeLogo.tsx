@@ -4,13 +4,14 @@ import { Link, useLocation } from 'react-router';
 import logo from '../../../assets/header-icons/youtube-icon.svg';
 import logoSecondary from '../../../assets/header-icons/youtube-icon-2.svg';
 import styles from './youtube-logo.module.scss';
+import { SCREEN_WIDTH_MOBILE } from '../../../consts/consts.ts';
 
 const YouTubeLogo = () => {
   const pagePath = useLocation().pathname;
   const screenWidth = window.innerWidth;
   return (
     <Link className={styles.logo} to="/" aria-label="Go to the home page">
-      {pagePath === '/channel' && screenWidth === 320 ? (
+      {pagePath === '/channel' && screenWidth === SCREEN_WIDTH_MOBILE ? (
         <div className={styles['logo-title-container']}>
           <img src={logoSecondary} alt="" width={37} height={25} />
           <p className={styles.title}>Margaret Phelps</p>

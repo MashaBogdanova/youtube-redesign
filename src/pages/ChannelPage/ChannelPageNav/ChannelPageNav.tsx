@@ -5,6 +5,7 @@ import arrowDownIcon from '../../../assets/ui-icons/down-arrow.svg';
 import ButtonIcon from '../../../components/UI/ButtonIcon/ButtonIcon.tsx';
 import { channelPageNavItems } from '../../../config/channel-page-nav-items.ts';
 import styles from './channel-page-nav.module.scss';
+import { SCREEN_WIDTH_MOBILE } from '../../../consts/consts.ts';
 
 const ChannelPageNav = () => {
   const screenWidth = window.innerWidth;
@@ -12,7 +13,7 @@ const ChannelPageNav = () => {
     <nav className={styles.nav}>
       <ul className={styles['nav-items-list']}>
         {channelPageNavItems.map((item, index) => {
-          if (screenWidth === 320 && index >= 3) {
+          if (screenWidth === SCREEN_WIDTH_MOBILE && index >= 3) {
             return;
           }
 

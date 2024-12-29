@@ -9,6 +9,7 @@ import ButtonIcon from '../UI/ButtonIcon/ButtonIcon.tsx';
 import YouTubeLogo from '../UI/YouTubeLogo/YouTubeLogo.tsx';
 import UserPicture from '../UserPicture/UserPicture.tsx';
 import styles from './header.module.scss';
+import { SCREEN_WIDTH_MOBILE } from '../../consts/consts.ts';
 
 const Header = () => {
   const pagePathname = useLocation().pathname;
@@ -20,7 +21,7 @@ const Header = () => {
       <YouTubeLogo />
       <SearchInput />
       <HeaderIcons />
-      {screenWidth !== 320 || pagePathname === '/' ? (
+      {screenWidth !== SCREEN_WIDTH_MOBILE || pagePathname === '/' ? (
         <UserPicture />
       ) : (
         <ButtonIcon

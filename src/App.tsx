@@ -5,10 +5,11 @@ import VideoPlayerPageLayout from './components/layouts/VideoPlayerPageLayout/Vi
 import ChannelPage from './pages/ChannelPage/ChannelPage.tsx';
 import HomePage from './pages/HomePage/HomePage.tsx';
 import VideoPlayerPage from './pages/VideoPlayerPage/VideoPlayerPage.tsx';
+import { SCREEN_WIDTH_MOBILE } from './consts/consts.ts';
 
 function App() {
   const screenWidth = window.innerWidth;
-  if (screenWidth === 320) {
+  if (screenWidth === SCREEN_WIDTH_MOBILE) {
     return (
       <Routes>
         <Route element={<MainLayout />}>
