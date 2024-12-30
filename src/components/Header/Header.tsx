@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLocation } from 'react-router';
 
 import moreIcon from '../../assets/ui-icons/more-icon.svg';
@@ -21,7 +20,7 @@ const Header = () => {
       <YouTubeLogo />
       <SearchInput />
       <HeaderIcons />
-      {screenWidth !== SCREEN_WIDTH_MOBILE || pagePathname === '/' ? (
+      {screenWidth > SCREEN_WIDTH_MOBILE || pagePathname === '/' ? (
         <UserPicture />
       ) : (
         <ButtonIcon

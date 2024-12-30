@@ -1,2 +1,2 @@
 export const SCREEN_WIDTH_DESKTOP = 1920;
-export const SCREEN_WIDTH_MOBILE = 320;
+export const SCREEN_WIDTH_MOBILE = 500;

@@ -37,7 +37,7 @@
 // Breakpoints
 
 @mixin media-mobile {
-  @media screen and (width: variables.$screen-width-mobile) {
+  @media screen and (max-width: variables.$screen-width-mobile) {
     @content;
   }
 }

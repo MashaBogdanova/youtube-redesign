@@ -15,6 +15,8 @@ import styles from './player.module.scss';
 
 const Player = () => {
   const screenWidth = window.innerWidth;
+
+  // todo: fix margin top of elements below player
   return (
     <article className={styles.container}>
       <img
@@ -27,7 +29,7 @@ const Player = () => {
         ${videoPlayerPage.cover.base} ${SCREEN_WIDTH_DESKTOP}w,
       `}
         sizes="
-          (max-width: 320px) 100vw,
+          (max-width: 500px) 100vw,
           192rem
         "
         alt=""
@@ -39,7 +41,7 @@ const Player = () => {
           <p>{videoPlayerPage.time}</p>
         </div>
 
-        {screenWidth !== SCREEN_WIDTH_MOBILE && <ProgressBar />}
+        {screenWidth > SCREEN_WIDTH_MOBILE && <ProgressBar />}
 
         <div className={styles['buttons-container']}>
           <div className={styles['left-buttons-container']}>

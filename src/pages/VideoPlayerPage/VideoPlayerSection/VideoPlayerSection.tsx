@@ -16,7 +16,7 @@ const VideoPlayerSection = () => {
       <hr />
       <div className={styles['description-subscribe-container']}>
         <VideoInfo />
-        {screenWidth === SCREEN_WIDTH_MOBILE ? (
+        {screenWidth <= SCREEN_WIDTH_MOBILE ? (
           <button className={styles['subscribe-button']} aria-label="Subscribe">
             Subscribe
           </button>

@@ -3,7 +3,9 @@
 
 .list {
   display: flex;
+  align-self: center;
   gap: 4rem;
+  max-width: max-content;
 }
 
 .vertical-list {

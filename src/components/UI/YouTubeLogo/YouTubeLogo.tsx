@@ -11,7 +11,7 @@ const YouTubeLogo = () => {
   const screenWidth = window.innerWidth;
   return (
     <Link className={styles.logo} to="/" aria-label="Go to the home page">
-      {pagePath === '/channel' && screenWidth === SCREEN_WIDTH_MOBILE ? (
+      {pagePath === '/channel' && screenWidth <= SCREEN_WIDTH_MOBILE ? (
         <div className={styles['logo-title-container']}>
           <img src={logoSecondary} alt="" width={37} height={25} />
           <p className={styles.title}>Margaret Phelps</p>

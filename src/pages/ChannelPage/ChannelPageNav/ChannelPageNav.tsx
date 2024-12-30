@@ -13,7 +13,7 @@ const ChannelPageNav = () => {
     <nav className={styles.nav}>
       <ul className={styles['nav-items-list']}>
         {channelPageNavItems.map((item, index) => {
-          if (screenWidth === SCREEN_WIDTH_MOBILE && index >= 3) {
+          if (screenWidth <= SCREEN_WIDTH_MOBILE && index >= 3) {
             return;
           }
 

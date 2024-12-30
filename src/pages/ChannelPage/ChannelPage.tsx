@@ -11,16 +11,20 @@ import TitleSection from './TitleSection/TitleSection.tsx';
 const ChannelPage = () => {
   return (
     <main className={styles['channel-page']}>
+      // todo: fix extra space on the right side inside section
       <section className={styles['banner-section']}>
         <picture>
           <source
             srcSet={channelPage.channelBanner.mobile}
             media="(max-width: 320px)"
           />
-          <img src={channelPage.channelBanner.base} alt="" />
+          <img
+            className={styles['banner-image']}
+            src={channelPage.channelBanner.base}
+            alt=""
+          />
         </picture>
       </section>
-
       <TitleSection />
       <ChannelPageNav />
       <MainChannelVideo />

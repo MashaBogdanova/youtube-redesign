@@ -9,7 +9,7 @@ import VideoPlayerPage from './pages/VideoPlayerPage/VideoPlayerPage.tsx';
 
 function App() {
   const screenWidth = window.innerWidth;
-  if (screenWidth === SCREEN_WIDTH_MOBILE) {
+  if (screenWidth <= SCREEN_WIDTH_MOBILE) {
     return (
       <Routes>
         <Route element={<MainLayout />}>

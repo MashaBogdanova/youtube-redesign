@@ -8,7 +8,7 @@ import styles from './menu-items-list.module.scss';
 const MenuItemsList = () => {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth === SCREEN_WIDTH_MOBILE) {
+  if (screenWidth <= SCREEN_WIDTH_MOBILE) {
     return <ItemList items={[...baseItems, additionalItems[0]]} />;
   }
 
