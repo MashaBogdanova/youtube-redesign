@@ -84,9 +84,10 @@ const Player = () => {
 
               <div
                 className={styles['volume-bar']}
+                role="progressbar"
                 aria-label={'Set volume level'}
               >
-                <div className={styles['current-volume']} />
+                <div className={styles['current-volume']} aria-hidden={true} />
               </div>
             </div>
           </div>
