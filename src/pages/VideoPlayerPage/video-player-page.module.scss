@@ -6,6 +6,10 @@
   padding: 0 7rem 4.8rem 5rem;
 
   @include mixins.media-mobile {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+
     flex-direction: column;
     gap: 2rem;
     padding: 0;

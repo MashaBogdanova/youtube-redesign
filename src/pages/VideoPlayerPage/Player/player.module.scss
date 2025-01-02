@@ -70,8 +70,8 @@
 
 @include mixins.media-mobile {
   .container {
-    position: absolute;
-    top: 6rem;
+    position: relative;
+    top: 0;
     left: 0;
     width: 100vw;
     margin: 0;

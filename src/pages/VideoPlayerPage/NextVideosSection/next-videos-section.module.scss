@@ -19,6 +19,7 @@
 
 @include mixins.media-mobile {
   .container {
+    @include mixins.content-layout-mobile;
     gap: 1.3rem;
   }
 

@@ -16,7 +16,6 @@ import styles from './player.module.scss';
 const Player = () => {
   const screenWidth = window.innerWidth;
 
-  // todo: fix margin top of elements below player
   return (
     <article className={styles.container}>
       <img

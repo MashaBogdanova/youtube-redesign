@@ -13,7 +13,9 @@ const VideoPlayerSection = () => {
     <section>
       <Player />
       <VideoStatistics />
+
       <hr />
+
       <div className={styles['description-subscribe-container']}>
         <VideoInfo />
         {screenWidth <= SCREEN_WIDTH_MOBILE ? (
@@ -24,6 +26,7 @@ const VideoPlayerSection = () => {
           <SubscribeButton />
         )}
       </div>
+
       <hr className={styles['divider-mobile']} />
     </section>
   );
