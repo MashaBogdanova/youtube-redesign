@@ -29,7 +29,7 @@ const Player = () => {
       `}
         sizes="
           (max-width: 500px) 100vw,
-          192rem
+          136.3rem
         "
         alt=""
       />

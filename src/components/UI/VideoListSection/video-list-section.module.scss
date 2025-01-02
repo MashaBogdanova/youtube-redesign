@@ -29,15 +29,9 @@
   align-self: end;
   gap: 4rem;
   height: 100%;
-
-  transform: translateY(1rem);
 }
 
 @include mixins.media-mobile {
-  .container {
-  margin-bottom: 6.5rem;
-  }
-
   .top-block-container {
     display: none;
   }

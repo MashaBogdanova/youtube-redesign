@@ -10,7 +10,6 @@ import Recommendations from './Recommendations/Recommendations.tsx';
 import TitleSection from './TitleSection/TitleSection.tsx';
 
 const ChannelPage = () => {
-  // todo: fix video list overflow-x
   return (
     <main className={styles['channel-page']}>
       <Banner />

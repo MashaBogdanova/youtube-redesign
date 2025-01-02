@@ -12,7 +12,7 @@ const Banner = () => {
           media="(max-width: 320px)"
         />
         <img
-          className={styles.image}
+          className={styles.cover}
           src={channelPage.channelBanner.base}
           alt=""
         />

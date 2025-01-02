@@ -9,12 +9,12 @@
 }
 
 html {
-  max-width: 100vw;
+  width: 100vw;
   font-size: 10px;
 }
 
 body {
-  max-width: 100vw;
+  width: 100vw;
   height: max-content;
   padding-top: variables.$body-top-padding-desktop;
   padding-left: variables.$body-left-padding-desktop;
@@ -34,7 +34,6 @@ hr {
 
 @include mixins.media-mobile {
   body {
-    width: variables.$screen-width-mobile;
     height: max-content;
     padding-top: variables.$body-top-padding-mobile;
     padding-left: variables.$body-padding-x-mobile;

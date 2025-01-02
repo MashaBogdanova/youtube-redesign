@@ -3,8 +3,8 @@
 
 .list {
   display: flex;
-  align-self: center;
   gap: 4rem;
+  overflow-x: auto;
 }
 
 .vertical-list {
@@ -35,8 +35,9 @@
 
 @include mixins.media-mobile {
   .list {
+    align-self: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 3.1rem;
   }
 
   .title {

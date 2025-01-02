@@ -18,19 +18,22 @@ $color-hr: rgba(216, 216, 216, 0.5);
 $color-toggle: #2196f3;
 $color-progress-bar: rgba(61, 61, 61, 0.6);
 
-// Layout
+// Layout desktop
 $screen-width-desktop: 1920px;
-$screen-width-mobile: 500px;
-
+$max-content-width: 166.5rem;
 $body-top-padding-desktop: 2rem;
 $body-left-padding-desktop: 3rem;
+
+// Layout mobile
+$screen-width-mobile: 500px;
 $body-top-padding-mobile: 1.2rem;
 $body-padding-x-mobile: 1.6rem;
+$main-y-space-mobile: 6rem;
 
 // Home page & Channel page layout
 $content-left-spacing: 22.5rem;
 $channel-page-right-spacing: 7rem;
-$pagination-right-spacing: 18rem;
+$pagination-right-spacing: 14.9rem;
 
 // Player
 $player-spacing: 3.3rem;
