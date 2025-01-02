@@ -8,14 +8,12 @@
 }
 
 .image {
-  max-width: 100vw;
+  width: 100%;
+  max-width: 159.5rem;
 }
 
 @include mixins.media-mobile {
   .banner {
-    position: relative;
-    top: 0;
-    right: variables.$body-padding-x-mobile;
     padding-right: 0;
   }
 }

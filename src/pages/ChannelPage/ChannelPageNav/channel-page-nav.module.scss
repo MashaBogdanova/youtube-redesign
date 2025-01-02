@@ -29,6 +29,8 @@
 
 @include mixins.media-mobile {
   .nav {
+    @include mixins.content-layout-mobile;
+
     margin-bottom: 2rem;
     width: 27.2rem;
   }

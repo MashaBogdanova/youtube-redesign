@@ -33,12 +33,13 @@
 
 @include mixins.media-mobile {
   .section {
+    @include mixins.content-layout-mobile;
+
     flex-direction: column;
     align-items: start;
     gap: 2rem;
 
     margin-bottom: 3rem;
-    padding: 0;
   }
 
   .channel-icon {

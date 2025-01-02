@@ -13,6 +13,12 @@
   color: variables.$color-text-s;
 }
 
+// Layout
+
+@mixin content-layout-mobile {
+  padding: 0 variables.$body-padding-x-mobile;
+}
+
 // Progress Bar
 
 @mixin progress-bar($height) {

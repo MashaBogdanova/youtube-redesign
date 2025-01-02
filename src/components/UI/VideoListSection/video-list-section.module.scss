@@ -34,6 +34,10 @@
 }
 
 @include mixins.media-mobile {
+  .container {
+  margin-bottom: 6.5rem;
+  }
+
   .top-block-container {
     display: none;
   }

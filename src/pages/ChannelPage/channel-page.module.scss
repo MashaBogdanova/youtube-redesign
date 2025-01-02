@@ -1,3 +1,17 @@
+@use '../../sass/abstracts/mixins.module' as mixins;
+
 .channel-page {
   position: relative;
+}
+
+.nav-video-recommendations-container {
+  position: relative;
+}
+
+@include mixins.media-mobile {
+  .channel-page {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+  }
 }

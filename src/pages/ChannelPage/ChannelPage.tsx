@@ -10,13 +10,16 @@ import Recommendations from './Recommendations/Recommendations.tsx';
 import TitleSection from './TitleSection/TitleSection.tsx';
 
 const ChannelPage = () => {
+  // todo: fix video list overflow-x
   return (
     <main className={styles['channel-page']}>
       <Banner />
       <TitleSection />
-      <ChannelPageNav />
-      <MainChannelVideo />
-      <Recommendations />
+      <div className={styles['nav-video-recommendations-container']}>
+        <ChannelPageNav />
+        <MainChannelVideo />
+        <Recommendations />
+      </div>
       <VideoListSection sectionData={channelPageVideosList} />
     </main>
   );
