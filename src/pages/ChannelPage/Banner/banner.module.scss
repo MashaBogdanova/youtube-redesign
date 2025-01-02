@@ -1,0 +1,21 @@
+@use '../../../sass/abstracts/variables.module' as variables;
+@use '../../../sass/abstracts/mixins.module' as mixins;
+
+.banner {
+  margin-bottom: 2.6rem;
+  padding-right: variables.$channel-page-right-spacing;
+  width: 100%;
+}
+
+.image {
+  max-width: 100vw;
+}
+
+@include mixins.media-mobile {
+  .banner {
+    position: relative;
+    top: 0;
+    right: variables.$body-padding-x-mobile;
+    padding-right: 0;
+  }
+}

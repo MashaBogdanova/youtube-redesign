@@ -1,7 +1,8 @@
 import React from 'react';
 
 import VideoListSection from '../../components/UI/VideoListSection/VideoListSection.tsx';
-import { channelPage, channelPageVideosList } from '../../data/channel-page.ts';
+import { channelPageVideosList } from '../../data/channel-page.ts';
+import Banner from './Banner/Banner.tsx';
 import styles from './channel-page.module.scss';
 import ChannelPageNav from './ChannelPageNav/ChannelPageNav.tsx';
 import MainChannelVideo from './MainChannelVideo/MainChannelVideo.tsx';
@@ -11,20 +12,7 @@ import TitleSection from './TitleSection/TitleSection.tsx';
 const ChannelPage = () => {
   return (
     <main className={styles['channel-page']}>
-      // todo: fix extra space on the right side inside section
-      <section className={styles['banner-section']}>
-        <picture>
-          <source
-            srcSet={channelPage.channelBanner.mobile}
-            media="(max-width: 320px)"
-          />
-          <img
-            className={styles['banner-image']}
-            src={channelPage.channelBanner.base}
-            alt=""
-          />
-        </picture>
-      </section>
+      <Banner />
       <TitleSection />
       <ChannelPageNav />
       <MainChannelVideo />
