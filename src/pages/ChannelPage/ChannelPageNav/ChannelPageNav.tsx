@@ -23,7 +23,7 @@ const ChannelPageNav = () => {
               label={item.title!}
               width="19"
               height="19"
-              key={item.title}
+              key={item.title + index}
             />
           ) : (
             <NavLink
